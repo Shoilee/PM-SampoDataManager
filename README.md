@@ -1,7 +1,7 @@
 This repository provides source code for converting colonial collections data for use in the PM-SAMPO application. It includes codes for processing existing Linked Data and deploying a Fuseki triplestore for querying through endpoint.
 
-Live Data Portal: [Colonial Collections](https://data.colonialcollections.nl/)
-Existing Endpoint: https://api.colonialcollections.nl/datasets/nmvw/collection-archives/sparql
+- Live Data Portal: [Colonial Collections](https://data.colonialcollections.nl/)
+- Existing Endpoint: https://api.colonialcollections.nl/datasets/nmvw/collection-archives/sparql
 
 # colonial-collections-data
 
