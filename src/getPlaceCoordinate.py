@@ -1,3 +1,4 @@
+# TODO: place geonames in a trig file with the Named Graph
 import requests
 import xml.etree.ElementTree as ET
 from SPARQLWrapper import SPARQLWrapper, JSON
