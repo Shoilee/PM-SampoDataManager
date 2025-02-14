@@ -3,11 +3,22 @@ This repository provides source code for converting colonial collections data fo
 - Live Data Portal: [Colonial Collections](https://data.colonialcollections.nl/)
 - Existing Endpoint: https://api.colonialcollections.nl/datasets/nmvw/collection-archives/sparql
 
-# colonial-collections-data
 
-https://data.colonialcollections.nl/
+# Conversion Documentation
 
-## Build Fuseki container for publishing the data
+|Graph | Source| Properties
+|----- | ----| ---|
+|sites| Download from [colonial collection datahub](https://data.colonialcollections.nl/nmvw/collection-archives)| |
+|histEvents| Download from [colonial collection datahub](https://data.colonialcollections.nl/nmvw/collection-archives)| |
+|thesaurus| Download from [colonial collection datahub](https://data.colonialcollections.nl/nmvw/collection-archives)| |
+|geonames| Extracted from [geonames API](http://secure.geonames.org)| |
+
+## TODO:
+- `src/getPlaceCoordinate.py`: place geonames in a trig file with the Named Graph
+
+
+
+# Build Fuseki container for publishing the data
 
 `docker build -t colonial-collections-fuseki .`
 
@@ -25,3 +36,4 @@ docker stop colonial-collections
 docker rm colonial-collections
 docker run -d -p 3048:3030 --restart unless-stopped --name colonial-collections colonial-collections-fuseki
 ```
+
