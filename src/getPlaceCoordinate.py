@@ -50,7 +50,7 @@ def fetch_sparql_results(offset=0):
 # Start with an initial offset of 0
 offset = 0
 batch_size = 100
-ttl_file = "../data/geonames.ttl"
+ttl_file = "data/geonames.ttl"
 
 try:
     while True:
