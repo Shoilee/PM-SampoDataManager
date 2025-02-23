@@ -12,6 +12,7 @@ CRM = Namespace("http://www.cidoc-crm.org/cidoc-crm/")
 SKOS = Namespace("http://www.w3.org/2004/02/skos/core#")
 RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 AAT = Namespace("http://vocab.getty.edu/aat/")
+PM = Namespace("http:/pressingmatter.nl/")
 
 # SPARQL Query
 QUERY = f"""
@@ -20,13 +21,27 @@ PREFIX skos: <{SKOS}>
 PREFIX rdfs: <{RDFS}>
 PREFIX aat: <{AAT}>
 
-SELECT ?object ?type ?typeLabel{{
+SELECT ?object ?type ?material ?intendedUse{{
     GRAPH <{GRAPH_URI}> {{
+        ?object a crm:E22_Human-Made_Object .
+    }}
+    # type
+    {{
         ?object crm:P2_has_type ?type .
-        OPTIONAL {{ ?type skos:prefLabel ?typeLabel . }}
-        
-        }}
-}}LIMIT 10
+        ?type skos:inScheme <https://hdl.handle.net/20.500.11840/conceptscheme2> .
+    }}
+
+    # Materials
+    UNION {{
+        ?object crm:P45_consists_of/skos:altLabel ?material .
+    }}
+    
+    # Intended Use
+    UNION {{
+        ?object crm:P103_was_intended_for/crm:P190_has_symbolic_content ?intendedUse .
+    }}
+
+}}LIMIT 100
 """
 
 def fetch_sparql_results():
@@ -52,16 +67,21 @@ def store_triples_in_graph(results):
         if "type" in row:
             type_uri = URIRef(row["type"]["value"])
             graph.add((obj, CRM["P2_has_type"], type_uri))
-            if "typeLabel" in row:
-                graph.add((type_uri, SKOS["prefLabel"], Literal(row["typeLabel"]["value"])))
 
+        if "material" in row:
+            material_label = Literal(row["material"]["value"])
+            graph.add((obj, PM["materials_used"], material_label))
+
+        if "intendedUse" in row:
+            intended_use_label = Literal(row["intendedUse"]["value"])
+            graph.add((obj, PM["intended_use"], intended_use_label))
     return ds
 
 def main():
     """Main function to execute the SPARQL query and store the data safely."""
     results = fetch_sparql_results()
     if not results:
-        print("No data retrieved. Exiting.")
+        print("No data retrieved.")
         return
     
     graph = store_triples_in_graph(results)
