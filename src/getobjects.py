@@ -5,7 +5,7 @@ import os
 # SPARQL Endpoint
 ENDPOINT_URL = "https://api.colonialcollections.nl/datasets/nmvw/collection-archives/sparql"
 GRAPH_URI = "https://data.colonialcollections.nl/nmvw/graph/objects"
-OUTPUT_FILE = "../data/objects.trig"
+OUTPUT_FILE = "data/objects.trig"
 
 # Define Namespaces
 CRM = Namespace("http://www.cidoc-crm.org/cidoc-crm/")
