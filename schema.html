@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colonial Collections Data Schema</title>
+    <link rel="stylesheet" href="https://www.ldf.fi/schema/tervesuomi/style.css">
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px; }
+        h1, h2, h3 { color: #004B87; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background: #004B87; color: white; }
+    </style>
+</head>
+<body>
+    <h1>Colonial Collections Data Schema</h1>
+    <p>This document describes the schema used in the <strong>PMSAMPO</strong> demonstrator. The schema is based on existing Linked Data available through the Colonial Collections endpoint.</p>
+    
+    <h2>Namespace Prefixes</h2>
+    <pre>
+        prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt;
+        prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+        prefix wgs84: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+        prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+        prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+        prefix pm: &lt;https://pressingmatter.nl/&gt;
+    </pre>
+    
+    <h2>CLASS: crm:E22_Human-Made_Object</h2>
+    
+    <h3>Properties</h3>
+    <table>
+        <tr>
+            <th>Property</th>
+            <th>Predicate</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Image</td>
+            <td>pm:shown_by</td>
+            <td>Links the object to an image representation.</td>
+        </tr>
+        <tr>
+            <td>Object Type</td>
+            <td>crm:P2_has_type</td>
+            <td>Categorizes the object based on type.</td>
+        </tr>
+        <tr>
+            <td>Materials</td>
+            <td>pm:materials_used</td>
+            <td>The materials the object is made of.</td>
+        </tr>
+        <tr>
+            <td>Maker</td>
+            <td>pm:maker</td>
+            <td>Identifies the person or entity responsible for producing the object.</td>
+        </tr>
+        <tr>
+            <td>Production Place</td>
+            <td>pm:production_place</td>
+            <td>The geographic location where the object was produced.</td>
+        </tr>
+        <tr>
+            <td>Production Time Span</td>
+            <td>pm:production_time_span</td>
+            <td>The time period during which the object was created.</td>
+        </tr>
+        <tr>
+            <td>Provenance Type</td>
+            <td>crm:P2_has_type</td>
+            <td>Describes how the object was acquired.</td>
+        </tr>
+        <tr>
+            <td>Provenance From Actor</td>
+            <td>pm:provenance_from_actor</td>
+            <td>The entity involved in the object's acquisition.</td>
+        </tr>
+        <tr>
+            <td>Provenance To Actor</td>
+            <td>pm:provenance_to_actor</td>
+            <td>The entity receiving the object.</td>
+        </tr>
+        <tr>
+            <td>Historical Event</td>
+            <td>pm:related_to</td>
+            <td>The event connected to the object's acquisition or transfer.</td>
+        </tr>
+    </table>
+    
+    <h2>Example Data</h2>
+    <pre>
+        
+    </pre>
+    
+    <h2>License</h2>
+    <!--  <p>The schema and data model are licensed under <a href="#">CC-BY 4.0</a>.</p> -->
+    
+    <h2>Contact</h2>
+    <p>For inquiries, please contact: <a href="mailto:s.b.a.shoilee@vu.nl">Sarah Shoilee</a>.</p>
+</body>
+</html>
