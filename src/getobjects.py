@@ -1,6 +1,6 @@
 from rdflib import Graph, Namespace, URIRef, Literal, Dataset
 from SPARQLWrapper import SPARQLWrapper, JSON
-import os
+import time
 
 # SPARQL Endpoint
 ENDPOINT_URL = "https://api.colonialcollections.nl/datasets/nmvw/collection-archives/sparql"
@@ -26,10 +26,10 @@ def fetch_sparql_results(offset):
     PREFIX aat: <{AAT}>
     PREFIX dct: <{DCT}>
     
-    SELECT ?object ?image ?title ?identifier ?type ?material ?intendedUse ?maker ?productionPlace ?productionTimeSpan ?startDate ?endDate
-           ?provenanceType ?provenanceTimeSpan ?provenanceTimeSpan ?provenanceStart ?provenanceEnd ?provenanceFrom ?provenanceTo ?historicalEvent {{
+    SELECT ?object ?image ?title ?identifier ?inventoryNumber ?type ?material ?intendedUse ?maker ?productionPlace ?productionTimeSpan ?startDate ?endDate
+           ?provenanceType ?provenanceTimeSpan ?provenanceStart ?provenanceEnd ?provenanceFrom ?provenanceTo ?historicalEvent {{
         # temporary constraints
-        ?object crm:P141i_was_assigned_by/crm:P141_assigned <https://hdl.handle.net/20.500.11840/event11> .
+        ?object crm:P141i_was_assigned_by/crm:P141_assigned <https://hdl.handle.net/20.500.11840/event423> .
         {{
             GRAPH <{GRAPH_URI}> {{
                 ?object a crm:E22_Human-Made_Object .
@@ -42,7 +42,16 @@ def fetch_sparql_results(offset):
             ?image__id <https://linked.art/ns/terms/access_point> ?image .
         }}
         UNION {{ ?object dct:title ?title . }}
-        UNION {{ ?object crm:P1_is_identified_by/crm:P190_has_symbolic_content ?identifier . }}
+        UNION {{ 
+            ?object crm:P1_is_identified_by ?identifier__id .
+            ?identifier__id crm:P2_has_type <http://vocab.getty.edu/aat/300445023> .
+            ?identifier__id crm:P190_has_symbolic_content ?identifier . 
+        }}
+        UNION {{ 
+            ?object crm:P1_is_identified_by ?inventoryNumber__id .
+            ?inventoryNumber__id crm:P2_has_type <http://vocab.getty.edu/aat/300404626> .
+            ?inventoryNumber__id crm:P190_has_symbolic_content ?inventoryNumber . 
+        }}
         UNION {{ ?object crm:P2_has_type ?type . }}
         UNION {{ ?object crm:P45_consists_of/skos:altLabel ?material . }}
         UNION {{ ?object crm:P103_was_intended_for/crm:P190_has_symbolic_content ?intendedUse . }}
@@ -61,7 +70,7 @@ def fetch_sparql_results(offset):
         }}
         UNION {{ ?object (crm:P24i_changed_ownership_through/crm:P23_transferred_title_from | crm:P30i_custody_transferred_through/crm:P28_custody_surrendered_by) ?provenanceFrom . }}
         UNION {{ ?object (crm:P24i_changed_ownership_through/crm:P22_transferred_title_to | crm:P30i_custody_transferred_through/crm:P29_custody_received_by) ?provenanceTo . }}
-        UNION {{ ?object crm:P12_occurred_in_the_presence_of ?historicalEvent . }}
+        UNION {{ ?object crm:P141i_was_assigned_by/crm:P141_assigned ?historicalEvent . }}
     }} LIMIT {BATCH_SIZE} OFFSET {offset}
     """
     
@@ -90,6 +99,8 @@ def store_triples_in_graph(results, ds):
             graph.add((obj, DCT["title"], Literal(row["title"]["value"])))
         if "identifier" in row:
             graph.add((obj, PM["identified_by"], Literal(row["identifier"]["value"])))
+        if "inventoryNumber" in row:
+            graph.add((obj, PM["inventory_number"], Literal(row["inventoryNumber"]["value"])))
         if "type" in row:
             graph.add((obj, CRM["P2_has_type"], URIRef(row["type"]["value"])))
         if "material" in row:
@@ -112,7 +123,7 @@ def store_triples_in_graph(results, ds):
             graph.add((obj, PM["provenance_type"], URIRef(row["provenanceType"]["value"])))
         if "provenanceTimeSpan" in row:
             provenanceTimeSpan_URI = URIRef(row["provenanceTimeSpan"]["value"])
-            graph.add((obj, CRM["P4_has_time-span"], provenanceTimeSpan_URI))
+            graph.add((obj, PM["provenance_time_span"], provenanceTimeSpan_URI))
             graph.add((provenanceTimeSpan_URI, RDF["type"], CRM["Time-Span"]))
             if "provenanceStart" in row:
                 graph.add((provenanceTimeSpan_URI, CRM["P82a_begin_of_the_begin"], Literal(row["provenanceStart"]["value"])))
@@ -123,11 +134,12 @@ def store_triples_in_graph(results, ds):
         if "provenanceTo" in row:
             graph.add((obj, PM["provenance_to_actor"], URIRef(row["provenanceTo"]["value"])))
         if "historicalEvent" in row:
-            graph.add((obj, PM["historical_event"], URIRef(row["historicalEvent"]["value"])))
+            graph.add((obj, PM["related_to"], URIRef(row["historicalEvent"]["value"])))
 
 
 def main():
     """Main function to execute paginated SPARQL queries and store the data."""
+    start_time = time.time()
     offset = 0
     ds = Dataset()
     try:
@@ -147,6 +159,16 @@ def main():
         print(f"Saving extracted triples to {OUTPUT_FILE}...")
         ds.serialize(destination=OUTPUT_FILE, format="trig")
         print("Data successfully saved.")
+
+        print("\n")
+        end_time = time.time()
+        execution_time = end_time - start_time
+        print(f"Start Time: {time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(start_time))}")
+        print(f"End Time: {time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(end_time))}")
+        print(f"Total Triples Added: {len(ds)}")
+        hours, rem = divmod(execution_time, 3600)
+        minutes, seconds = divmod(rem, 60)
+        print(f"Execution Time: {int(hours)}h {int(minutes)}m {seconds:.4f}s")
 
 
 if __name__ == "__main__":

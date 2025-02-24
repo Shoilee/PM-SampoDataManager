@@ -27,8 +27,13 @@ prefix pm: <https://pressingmatter.nl/>
 
 ### Identifier
 - **Predicate:** `pm:identified_by`
-- **Previous Predicate:** `crm:P1_is_identified_by/crm:P190_has_symbolic_content`
-- **Description:** Inventory number of object
+- **Previous Predicate:** `crm:P1_is_identified_by/crm:P190_has_symbolic_content` with filter <http://vocab.getty.edu/aat/300445023>
+- **Description:** Internal system identifier for object
+
+### Inventory Number
+- **Predicate:** `pm:inventory_number`
+- **Previous Predicate:** `crm:P1_is_identified_by/crm:P190_has_symbolic_content` with filter <http://vocab.getty.edu/aat/300404626>
+- **Description:** Inventory number of objects
 
 ### Object Type
 - **Predicate:** `crm:P2_has_type`
@@ -65,7 +70,7 @@ prefix pm: <https://pressingmatter.nl/>
 - **Previous Predicate:** `crm:P108i_was_produced_by/crm:P7_took_place_at`
 - **Label Property:** `skos:prefLabel`
 - **Description:** The geographic location where the object was produced.
-- - **Note:** Duplication to benefit facet.
+- **Note:** Duplication to benefit facet.
 
 ### Production Time Span
 - **Predicate**: `pm:production_time_span`
@@ -79,6 +84,7 @@ prefix pm: <https://pressingmatter.nl/>
 - ***
 - **Label Property:** federated query over <https://data.getty.edu/vocab/sparql> `rdfs:label`
 - **Description:** Describes how the object was acquired (e.g., purchase, donation, looting).
+- **Note:** Duplication to benefit facet.
 
 ### Provanence Time Span
 - **Predicate:** `(crm:P24i_changed_ownership_through|crm:P30i_custody_transferred_through) / crm:P4_has_time-span`
@@ -91,12 +97,14 @@ prefix pm: <https://pressingmatter.nl/>
 - **Previous Predicate:**`(crm:P24i_changed_ownership_through/crm:P23_transferred_title_from) | (crm:P30i_custody_transferred_through/crm:P28_custody_surrendered_by)`
 - **Label Property:** `rdfs:label`
 - **Description:** Describes the connected person or entity involved in objects acquisition or transfer of custody.
+- **Note:** Duplication to benefit facet.
 
 ### Provenance (to) Actor
 - **Predicate:** `pm:provenance_from_actor`
 - **Previous Predicate:**`crm:P24i_changed_ownership_through/crm:P22_transferred_title_to) | (crm:P30i_custody_transferred_through/crm:P29_custody_received_by)`
 - **Label Property:** `rdfs:label`
 - **Description:** Describes the connected person or entity involved in objects acquisition or transfer of custody.
+- **Note:** Duplication to benefit facet.
 
 ### Historical Event
 - **Predicate:** `pm:related_to`
@@ -111,28 +119,41 @@ prefix pm: <https://pressingmatter.nl/>
 - crm:P82b_end_of_the_end
 
 
-
 ## Example Data
 ```turtle
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix pm: <http:/pressingmatter.nl/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 
-<https://hdl.handle.net/20.500.11840/714128> a crm:E22_Human-Made_Object ;
-        dct:title "Staatsielans" ;
-        crm:P4_has_time-span <https://data.colonialcollections.nl/.well-known/genid/0642d2327fb241bd96598c64057d3a1b> ;
-        pm:identified_by "714128",
-            "RV-1644-6" ;
-        pm:intended_use "staatsielans" ;
-        pm:materials_used "silver (metal)",
-            "wood" ;
-        pm:provenance_from_actor <https://hdl.handle.net/20.500.11840/pi58313> ;
+<https://hdl.handle.net/20.500.11840/101766> a crm:E22_Human-Made_Object ;
+        dct:title "DOLK MET GREEP VAN DIERLIJK TAND EN HOUTEN SCHEDE" ;
+        crm:P2_has_type <https://hdl.handle.net/20.500.11840/termmaster10068051> ;
+        pm:identified_by "101766" ;
+        pm:intended_use "Dolk (onderdeel)" ;
+        pm:inventory_number "TM-3279-11a" ;
+        pm:materials_used "steel (alloy)",
+            "tooth (animal)" ;
+        pm:production_place <https://hdl.handle.net/20.500.11840/termmaster10062019> ;
+        pm:production_time_span <https://data.colonialcollections.nl/.well-known/genid/78bd8f4275414284a767946182582819>,
+            <https://data.colonialcollections.nl/.well-known/genid/c8a929316be145ef8e3ed554ec4c4de9> ;
+        pm:provenance_from_actor <https://hdl.handle.net/20.500.11840/pi7847> ;
+        pm:provenance_time_span <https://data.colonialcollections.nl/.well-known/genid/635f53b1134940f1acc062cf8238ad22> ;
         pm:provenance_to_actor <https://data.colonialcollections.nl/nmvw/id/constituent/69799> ;
-        pm:provenance_type <http://vocab.getty.edu/aat/300157782>,
-            <http://vocab.getty.edu/aat/300417638> ;
-        pm:shown_by "https://collectie.wereldculturen.nl/cc/imageproxy.ashx?server=localhost&port=17581&filename=images//Images/RV//RV-1644-6.jpg",
-            "https://collectie.wereldculturen.nl/cc/imageproxy.ashx?server=localhost&port=17581&filename=images//Images/RV//ScanNr\\J3035\\3035211.JPG" .
+        pm:provenance_type <http://vocab.getty.edu/aat/300417642> ;
+        pm:related_to <https://hdl.handle.net/20.500.11840/event423> ;
+        pm:shown_by "https://collectie.wereldculturen.nl/cc/imageproxy.ashx?server=localhost&port=17581&filename=images//Images/TM//TM-3279-11a.jpg" .
+
+<https://data.colonialcollections.nl/.well-known/genid/635f53b1134940f1acc062cf8238ad22> a crm:Time-Span ;
+        crm:P82a_begin_of_the_begin "1977-06-20" ;
+        crm:P82b_end_of_the_end "1977-06-20" .
+
+<https://data.colonialcollections.nl/.well-known/genid/78bd8f4275414284a767946182582819> a crm:Time-Span ;
+        crm:P82b_end_of_the_end "1977-01-01" .
+
+<https://data.colonialcollections.nl/.well-known/genid/c8a929316be145ef8e3ed554ec4c4de9> a crm:Time-Span ;
+        crm:P82b_end_of_the_end "1977-01-01" .
 ```
+
 
 ## License
 
