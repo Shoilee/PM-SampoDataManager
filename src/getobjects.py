@@ -32,7 +32,7 @@ def fetch_sparql_results(offset):
             }}
         }}
         UNION {{ 
-            ?id crm:P65_shows_visual_item ?i_BNODE .
+            ?object crm:P65_shows_visual_item ?i_BNODE .
             ?i_BNODE a crm:E36_Visual_Item .
             ?i_BNODE <https://linked.art/ns/terms/digitally_shown_by> ?image__id.
             ?image__id <https://linked.art/ns/terms/access_point> ?image .
