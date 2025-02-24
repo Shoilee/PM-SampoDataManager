@@ -26,6 +26,8 @@ def fetch_sparql_results(offset):
     
     SELECT ?object ?image ?type ?material ?intendedUse ?maker ?productionPlace ?productionTimeSpan ?startDate ?endDate
            ?provenanceType ?provenanceTimeSpan ?provenanceTimeSpan ?provenanceStart ?provenanceEnd ?provenanceFrom ?provenanceTo ?historicalEvent {{
+        # temporary constraints
+        ?object crm:P141i_was_assigned_by/crm:P141_assigned [a crm:E5_Event]
         {{
             GRAPH <{GRAPH_URI}> {{
                 ?object a crm:E22_Human-Made_Object .
