@@ -15,6 +15,7 @@ RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 AAT = Namespace("http://vocab.getty.edu/aat/")
 PM = Namespace("http:/pressingmatter.nl/")
 RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
+DCT = Namespace("http://purl.org/dc/terms/")
 
 def fetch_sparql_results(offset):
     """Fetch SPARQL query results from the endpoint with pagination."""
@@ -23,8 +24,9 @@ def fetch_sparql_results(offset):
     PREFIX skos: <{SKOS}>
     PREFIX rdfs: <{RDFS}>
     PREFIX aat: <{AAT}>
+    PREFIX dct: <{DCT}>
     
-    SELECT ?object ?image ?type ?material ?intendedUse ?maker ?productionPlace ?productionTimeSpan ?startDate ?endDate
+    SELECT ?object ?image ?title ?identifier ?type ?material ?intendedUse ?maker ?productionPlace ?productionTimeSpan ?startDate ?endDate
            ?provenanceType ?provenanceTimeSpan ?provenanceTimeSpan ?provenanceStart ?provenanceEnd ?provenanceFrom ?provenanceTo ?historicalEvent {{
         # temporary constraints
         ?object crm:P141i_was_assigned_by/crm:P141_assigned <https://hdl.handle.net/20.500.11840/event11> .
@@ -39,6 +41,8 @@ def fetch_sparql_results(offset):
             ?i_BNODE <https://linked.art/ns/terms/digitally_shown_by> ?image__id.
             ?image__id <https://linked.art/ns/terms/access_point> ?image .
         }}
+        UNION {{ ?object dct:title ?title . }}
+        UNION {{ ?object crm:P1_is_identified_by/crm:P190_has_symbolic_content ?identifier . }}
         UNION {{ ?object crm:P2_has_type ?type . }}
         UNION {{ ?object crm:P45_consists_of/skos:altLabel ?material . }}
         UNION {{ ?object crm:P103_was_intended_for/crm:P190_has_symbolic_content ?intendedUse . }}
@@ -61,6 +65,8 @@ def fetch_sparql_results(offset):
     }} LIMIT {BATCH_SIZE} OFFSET {offset}
     """
     
+    # print(query)
+
     sparql = SPARQLWrapper(ENDPOINT_URL)
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
@@ -79,7 +85,11 @@ def store_triples_in_graph(results, ds):
         obj = URIRef(row["object"]["value"])
         graph.add((obj, RDF["type"], CRM["E22_Human-Made_Object"])) 
         if "image" in row:
-            graph.add((obj, PM["shown_by"], URIRef(row["image"]["value"])))
+            graph.add((obj, PM["shown_by"], Literal(row["image"]["value"])))
+        if "title" in row:
+            graph.add((obj, DCT["title"], Literal(row["title"]["value"])))
+        if "identifier" in row:
+            graph.add((obj, PM["identified_by"], Literal(row["identifier"]["value"])))
         if "type" in row:
             graph.add((obj, CRM["P2_has_type"], URIRef(row["type"]["value"])))
         if "material" in row:
