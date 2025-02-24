@@ -8,10 +8,9 @@ This repository provides source code for converting colonial collections data fo
 
 |Graph | Source| Properties
 |----- | ----| ---|
-|collections| ----| [schema](../schema/collections.md)|
-|provActivity| ----| ---|
+|collections| ----| [schema](schema/collections.md)|
+|provEvents| ----| [schema](schema/provEvents.md) |
 |actors| ----| ---|
-|sites| Download from [colonial collection datahub](https://data.colonialcollections.nl/nmvw/collection-archives)| |
 |histEvents| Download from [colonial collection datahub](https://data.colonialcollections.nl/nmvw/collection-archives)| |
 |thesaurus| Download from [colonial collection datahub](https://data.colonialcollections.nl/nmvw/collection-archives)| |
 |geonames| Extracted from [geonames API](http://secure.geonames.org)| |
@@ -19,7 +18,7 @@ This repository provides source code for converting colonial collections data fo
 
 ## TODO:
 - `src/getPlaceCoordinate.py`: place geonames in a trig file with the Named Graph
-
+- add data source
 
 
 # Build Fuseki container for publishing the data
