@@ -4,7 +4,8 @@ import time
 
 # SPARQL Endpoint
 ENDPOINT_URL = "https://api.colonialcollections.nl/datasets/nmvw/collection-archives/sparql"
-GRAPH_URI = "https://data.colonialcollections.nl/nmvw/graph/objects"
+OLD_GRAPH_URI = "https://data.colonialcollections.nl/nmvw/graph/objects"
+NEW_GRAPH_URI = "https://data.colonialcollections.nl/nmvw/graph/objects"
 OUTPUT_FILE = "data/objects.trig"
 BATCH_SIZE = 1000  # Number of results per query
 
@@ -31,7 +32,7 @@ def fetch_sparql_results(offset):
         # temporary constraints
         ?object crm:P141i_was_assigned_by/crm:P141_assigned <https://hdl.handle.net/20.500.11840/event423> .
         {{
-            GRAPH <{GRAPH_URI}> {{
+            GRAPH <{OLD_GRAPH_URI}> {{
                 ?object a crm:E22_Human-Made_Object .
             }}
         }}
@@ -88,7 +89,7 @@ def fetch_sparql_results(offset):
         return []
 
 def store_triples_in_graph(results, ds):
-    graph = ds.graph(URIRef(f"{GRAPH_URI}"))
+    graph = ds.graph(URIRef(f"{NEW_GRAPH_URI}"))
     
     for row in results:
         obj = URIRef(row["object"]["value"])
