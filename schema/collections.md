@@ -21,6 +21,15 @@ prefix pm: <https://pressingmatter.nl/>
 - **Previous Predicate:** `crm:P65_shows_visual_item/<https://linked.art/ns/terms/digitally_shown_by>/<https://linked.art/ns/terms/access_point>`
 - **Description:** Categorizes the object based on object type; connects to thesuari term that is explained by concept scheme <https://hdl.handle.net/20.500.11840/conceptscheme2>.
 
+### Title
+- **Predicate:** `dct:title`
+- **Description:** Object title.
+
+### Identifier
+- **Predicate:** `pm:identified_by`
+- **Previous Predicate:** `crm:P1_is_identified_by/crm:P190_has_symbolic_content`
+- **Description:** Inventory number of object
+
 ### Object Type
 - **Predicate:** `crm:P2_has_type`
 - **Label Property:** `skos:prefLabel`
@@ -95,10 +104,34 @@ prefix pm: <https://pressingmatter.nl/>
 - **Label Property:** `crm:P1_is_identified_by / crm:P190_has_symbolic_content`
 - **Description:** Describes the connected person or entity involved in objects acusition or transfer of custody.
 
+## Class crm:Time-Span
+### Properties
+- rdfs:label: TODO - concatanation of begin_date and end_date
+- crm:P82a_begin_of_the_begin 
+- crm:P82b_end_of_the_end
+
+
 
 ## Example Data
 ```turtle
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pm: <http:/pressingmatter.nl/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 
+<https://hdl.handle.net/20.500.11840/714128> a crm:E22_Human-Made_Object ;
+        dct:title "Staatsielans" ;
+        crm:P4_has_time-span <https://data.colonialcollections.nl/.well-known/genid/0642d2327fb241bd96598c64057d3a1b> ;
+        pm:identified_by "714128",
+            "RV-1644-6" ;
+        pm:intended_use "staatsielans" ;
+        pm:materials_used "silver (metal)",
+            "wood" ;
+        pm:provenance_from_actor <https://hdl.handle.net/20.500.11840/pi58313> ;
+        pm:provenance_to_actor <https://data.colonialcollections.nl/nmvw/id/constituent/69799> ;
+        pm:provenance_type <http://vocab.getty.edu/aat/300157782>,
+            <http://vocab.getty.edu/aat/300417638> ;
+        pm:shown_by "https://collectie.wereldculturen.nl/cc/imageproxy.ashx?server=localhost&port=17581&filename=images//Images/RV//RV-1644-6.jpg",
+            "https://collectie.wereldculturen.nl/cc/imageproxy.ashx?server=localhost&port=17581&filename=images//Images/RV//ScanNr\\J3035\\3035211.JPG" .
 ```
 
 ## License
