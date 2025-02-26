@@ -27,7 +27,7 @@ def fetch_sparql_results(offset):
     PREFIX aat: <{AAT}>
     PREFIX dct: <{DCT}>
     
-    SELECT ?object ?image ?title ?identifier ?inventoryNumber ?type ?material ?intendedUse ?maker ?productionPlace ?productionTimeSpan ?startDate ?endDate
+    SELECT ?object ?image ?title ?identifier ?inventoryNumber ?type ?material ?intendedUse__id ?intendedUse__label  ?maker ?productionPlace ?productionTimeSpan ?startDate ?endDate
            ?provenanceType ?provenanceTimeSpan ?provenanceStart ?provenanceEnd ?provenanceFrom ?provenanceTo ?historicalEvent {{
         # temporary constraints
         ?object crm:P141i_was_assigned_by/crm:P141_assigned <https://hdl.handle.net/20.500.11840/event423> .
@@ -54,8 +54,10 @@ def fetch_sparql_results(offset):
             ?inventoryNumber__id crm:P190_has_symbolic_content ?inventoryNumber . 
         }}
         UNION {{ ?object crm:P2_has_type ?type . }}
-        UNION {{ ?object crm:P45_consists_of/skos:altLabel ?material . }}
-        UNION {{ ?object crm:P103_was_intended_for/crm:P190_has_symbolic_content ?intendedUse . }}
+        UNION {{ ?object crm:P45_consists_of ?material . }}
+        UNION {{ 
+            ?object crm:P103_was_intended_for ?intendedUse__id . 
+            ?intendedUse__id crm:P190_has_symbolic_content ?intendedUse__label . }}
         UNION {{ ?object crm:P108i_was_produced_by/crm:P14_carried_out_by ?maker . }}
         UNION {{ ?object crm:P108i_was_produced_by/crm:P7_took_place_at ?productionPlace . }}
         UNION {{ 
@@ -105,9 +107,11 @@ def store_triples_in_graph(results, ds):
         if "type" in row:
             graph.add((obj, CRM["P2_has_type"], URIRef(row["type"]["value"])))
         if "material" in row:
-            graph.add((obj, PM["materials_used"], Literal(row["material"]["value"])))
-        if "intendedUse" in row:
-            graph.add((obj, PM["intended_use"], Literal(row["intendedUse"]["value"])))
+            graph.add((obj, PM["materials_used"], URIRef(row["material"]["value"])))
+        if "intendedUse__id" in row:
+            intendedUse = URIRef(row["intendedUse__id"]["value"])
+            graph.add((obj, PM["intended_use"], intendedUse))
+            graph.add((intendedUse, RDFS["label"], Literal(row["intendedUse__label"]["value"])))
         if "maker" in row:
             graph.add((obj, PM["maker"], URIRef(row["maker"]["value"])))
         if "productionPlace" in row:
