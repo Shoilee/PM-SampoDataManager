@@ -7,7 +7,7 @@ ENDPOINT_URL = "https://api.colonialcollections.nl/datasets/nmvw/collection-arch
 OLD_GRAPH_URI = "https://data.colonialcollections.nl/nmvw/graph/objects"
 NEW_GRAPH_URI = "https://data.colonialcollections.nl/nmvw/graph/objects"
 OUTPUT_FILE = "data/objects.trig"
-BATCH_SIZE = 1000  # Number of results per query
+BATCH_SIZE = 100  # Number of results per query
 
 # Define Namespaces
 CRM = Namespace("http://www.cidoc-crm.org/cidoc-crm/")
