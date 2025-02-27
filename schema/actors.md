@@ -3,6 +3,10 @@
 ## Overview
 This schema defines the structure of **Actors** data based on the collection provenance events query. By actors this schema covers both makers and provenance constituensts
 
+### **Label**
+- **Predicate:** `rdfs:label`
+- **Description:** Actors label
+
 ### **Names**
 - **Predicate:** `pm:identified_by`
 - **Previous Predicate:** `crm:P1_is_identified_by/crm:P190_has_symbolic_content` filtered by aat:300404650
