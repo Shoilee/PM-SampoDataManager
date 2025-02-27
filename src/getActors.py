@@ -24,7 +24,11 @@ def fetch_sparql_results(offset):
     PREFIX rdf: <{RDF}>
     PREFIX aat: <{AAT}>
     
-    SELECT ?actor ?name ?type ?role ?gender ?nationality ?biography ?remarks ?profession WHERE {{
+    SELECT ?actor ?label ?name ?type ?role ?gender ?nationality ?biography ?remarks ?profession WHERE {{
+        # temporary constraints
+        # ?object crm:P141i_was_assigned_by/crm:P141_assigned <https://hdl.handle.net/20.500.11840/event423> .
+        # ?object crm:P24i_changed_ownership_through/crm:P23_transferred_title_from  ?actor .
+
         ?actor rdf:type ?type .
         FILTER(?type IN (crm:E21_Person, crm:E74_Group, crm:E39_Actor))
         {{ 
