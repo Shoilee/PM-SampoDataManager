@@ -13,7 +13,9 @@ COPY --chown=9008 data/histEvents.trig /tmp/histEvents.trig
 # COPY --chown=9008 data/keyword-objects.trig /tmp/keyword-objects.trig
 # COPY --chown=9008 data/makers.trig /tmp/makers.trig
 # COPY --chown=9008 data/material-objects.trig /tmp/material-objects.trig
-# COPY --chown=9008 data/objects.trig /tmp/objects.trig
+COPY --chown=9008 data/objects.trig /tmp/objects.trig
+COPY --chown=9008 data/actors.trig /tmp/actors.trig
+COPY --chown=9008 data/provEvents.trig /tmp/provEvents.trig
 # COPY --chown=9008 data/provenance-constituents.trig /tmp/provenance-constituents.trig
 # COPY --chown=9008 data/provenance-objects.trig /tmp/provenance-objects.trig
 COPY --chown=9008 data/sites.trig /tmp/sites.trig
@@ -30,7 +32,9 @@ RUN $TDBLOADER /tmp/thesaurus.trig \
     # && $TDBLOADER /tmp/keyword-objects.trig \
     # && $TDBLOADER /tmp/makers.trig \
     # && $TDBLOADER /tmp/material-objects.trig \
-    # && $TDBLOADER /tmp/objects.trig \
+    && $TDBLOADER /tmp/objects.trig \
+    && $TDBLOADER /tmp/actors.trig \
+    && $TDBLOADER /tmp/provEvents.trig \
     # && $TDBLOADER /tmp/provenance-constituents.trig \
     # && $TDBLOADER /tmp/provenance-objects.trig \
     && $TDBLOADER /tmp/sites.trig \
@@ -47,7 +51,9 @@ RUN $TDBLOADER /tmp/thesaurus.trig \
     # && rm /tmp/keyword-objects.trig \
     # && rm /tmp/makers.trig \
     # && rm /tmp/material-objects.trig \
-    # && rm /tmp/objects.trig \
+    && rm /tmp/objects.trig \
+    && rm /tmp/actors.trig \
+    && rm /tmp/provEvents.trig \
     # && rm /tmp/provenance-constituents.trig \
     # && rm /tmp/provenance-objects.trig \
     && rm /tmp/sites.trig
