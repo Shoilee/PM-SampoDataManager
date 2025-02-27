@@ -52,14 +52,8 @@ prefix pm: <https://pressingmatter.nl/>
 - **Description:** The intended function or meaning of the object.
 - **Note:** lost thesuari links.
 
-### Produced 
-- **Predicate:** `pm:intended_use`
-- **Predicate:** `crm:P103_was_intended_for/crm:P190_has_symbolic_content`
-- **Description:** The intended function or meaning of the object.
-- **Note:** lost thesuari links.
-
 ### Maker
-- **Predicate:** `pm:maker:`
+- **Predicate:** `pm:maker`
 - **Previous Predicate:** `crm:P108i_was_produced_by/crm:P14_carried_out_by`
 - **Label Property:** `rdfs:label`
 - **Description:** Identifies the person or entity responsible for producing the object.
@@ -80,6 +74,7 @@ prefix pm: <https://pressingmatter.nl/>
 - **Description:** The time period during which the object was created.
 
 ### Provenance Type
+- **Predicate:** `pm:provenance_type`
 - **Previous Predicate:** `(crm:P24i_changed_ownership_through | crm:P30i_custody_transferred_through) / crm:P2_has_type`
 - ***
 - **Label Property:** federated query over <https://data.getty.edu/vocab/sparql> `rdfs:label`
@@ -87,7 +82,8 @@ prefix pm: <https://pressingmatter.nl/>
 - **Note:** Duplication to benefit facet.
 
 ### Provanence Time Span
-- **Predicate:** `(crm:P24i_changed_ownership_through|crm:P30i_custody_transferred_through) / crm:P4_has_time-span`
+- **Predicate:** `pm:provenance_time_span`
+- **Previous Predicate:** `(crm:P24i_changed_ownership_through|crm:P30i_custody_transferred_through) / crm:P4_has_time-span`
 - **Start Date:** `crm:P82a_begin_of_the_begin`
 - **End Date:** `crm:P82b_end_of_the_end`
 - **Description:** The time period when the acquisition took place.
@@ -100,7 +96,7 @@ prefix pm: <https://pressingmatter.nl/>
 - **Note:** Duplication to benefit facet.
 
 ### Provenance (to) Actor
-- **Predicate:** `pm:provenance_from_actor`
+- **Predicate:** `pm:provenance_to_actor`
 - **Previous Predicate:**`crm:P24i_changed_ownership_through/crm:P22_transferred_title_to) | (crm:P30i_custody_transferred_through/crm:P29_custody_received_by)`
 - **Label Property:** `rdfs:label`
 - **Description:** Describes the connected person or entity involved in objects acquisition or transfer of custody.
