@@ -7,14 +7,14 @@ ENDPOINT_URL = "https://api.colonialcollections.nl/datasets/nmvw/collection-arch
 OLD_GRAPH_URI = "https://data.colonialcollections.nl/nmvw/graph/objects"
 NEW_GRAPH_URI = "https://data.colonialcollections.nl/nmvw/graph/objects"
 OUTPUT_FILE = "data/objects.trig"
-BATCH_SIZE = 100  # Number of results per query
+BATCH_SIZE = 1000  # Number of results per query
 
 # Define Namespaces
 CRM = Namespace("http://www.cidoc-crm.org/cidoc-crm/")
 SKOS = Namespace("http://www.w3.org/2004/02/skos/core#")
 RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 AAT = Namespace("http://vocab.getty.edu/aat/")
-PM = Namespace("http:/pressingmatter.nl/")
+PM = Namespace("https://pressingmatter.nl/")
 RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 DCT = Namespace("http://purl.org/dc/terms/")
 
