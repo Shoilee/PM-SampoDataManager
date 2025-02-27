@@ -6,7 +6,7 @@ import time
 ENDPOINT_URL = "https://api.colonialcollections.nl/datasets/nmvw/collection-archives/sparql"
 NEW_GRAPH_URI = "https://pressingmatter.nl/nmvw/graph/actors"
 OUTPUT_FILE = "data/actors.trig"
-BATCH_SIZE = 1000  # Number of results per query
+BATCH_SIZE = 100  # Number of results per query
 
 # Define Namespaces
 CRM = Namespace("http://www.cidoc-crm.org/cidoc-crm/")
@@ -36,6 +36,7 @@ def fetch_sparql_results(offset):
             ?name_id crm:P2_has_type aat:300404650 ;
             crm:P190_has_symbolic_content ?name .
         }}
+        UNION {{ ?actor rdfs:label ?label . }}
         UNION {{ ?actor crm:P2_has_type/rdfs:label ?role . }}
         UNION {{ 
             ?actor crm:P67i_is_referred_to_by ?gender_id .
@@ -83,7 +84,8 @@ def store_triples_in_graph(results, ds):
     
     for row in results:
         actor = URIRef(row["actor"]["value"])
-        
+        if "label" in row:
+            graph.add((actor, RDFS["label"], Literal(row["label"]["value"])))
         if "name" in row:
             graph.add((actor, PM["identified_by"], Literal(row["name"]["value"])))
         if "type" in row:
