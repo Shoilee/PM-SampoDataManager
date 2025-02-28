@@ -1,4 +1,4 @@
-from rdflib import Graph, Namespace, URIRef, Literal, Dataset
+from rdflib import Graph, Namespace, URIRef, Literal, Dataset, XSD
 from SPARQLWrapper import SPARQLWrapper, JSON
 import time
 
@@ -121,9 +121,9 @@ def store_triples_in_graph(results, ds):
             graph.add((obj, PM["production_time_span"], productionTimeSpan_URI))
             graph.add((productionTimeSpan_URI, RDF["type"], CRM["Time-Span"]))
             if "startDate" in row:
-                graph.add((productionTimeSpan_URI, CRM["P82a_begin_of_the_begin"], Literal(row["startDate"]["value"])))
+                graph.add((productionTimeSpan_URI, CRM["P82a_begin_of_the_begin"], Literal(row["startDate"]["value"], datatype=XSD.date)))
             if "endDate" in row:
-                graph.add((productionTimeSpan_URI, CRM["P82b_end_of_the_end"], Literal(row["endDate"]["value"])))
+                graph.add((productionTimeSpan_URI, CRM["P82b_end_of_the_end"], Literal(row["endDate"]["value"], datatype=XSD.date)))
         if "provenanceType" in row:
             graph.add((obj, PM["provenance_type"], URIRef(row["provenanceType"]["value"])))
         if "provenanceTimeSpan" in row:
@@ -131,9 +131,9 @@ def store_triples_in_graph(results, ds):
             graph.add((obj, PM["provenance_time_span"], provenanceTimeSpan_URI))
             graph.add((provenanceTimeSpan_URI, RDF["type"], CRM["Time-Span"]))
             if "provenanceStart" in row:
-                graph.add((provenanceTimeSpan_URI, CRM["P82a_begin_of_the_begin"], Literal(row["provenanceStart"]["value"])))
+                graph.add((provenanceTimeSpan_URI, CRM["P82a_begin_of_the_begin"], Literal(row["provenanceStart"]["value"], datatype=XSD.date)))
             if "provenanceEnd" in row:
-                graph.add((provenanceTimeSpan_URI, CRM["P82b_end_of_the_end"], Literal(row["provenanceEnd"]["value"])))
+                graph.add((provenanceTimeSpan_URI, CRM["P82b_end_of_the_end"], Literal(row["provenanceEnd"]["value"], datatype=XSD.date)))
         if "provenanceFrom" in row:
             graph.add((obj, PM["provenance_from_actor"], URIRef(row["provenanceFrom"]["value"])))
         if "provenanceTo" in row:

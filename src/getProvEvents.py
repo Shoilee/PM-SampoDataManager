@@ -1,4 +1,4 @@
-from rdflib import Graph, Namespace, URIRef, Literal, Dataset
+from rdflib import Graph, Namespace, URIRef, Literal, Dataset, XSD
 from SPARQLWrapper import SPARQLWrapper, JSON
 import time
 
@@ -87,9 +87,9 @@ def store_triples_in_graph(results, ds):
             graph.add((event, CRM["P4_has_time-span"], timeSpan_URI))
             graph.add((timeSpan_URI, RDF["type"], CRM["Time-Span"]))
             if "startDate" in row:
-                graph.add((timeSpan_URI, CRM["P82a_begin_of_the_begin"], Literal(row["startDate"]["value"])))
+                graph.add((timeSpan_URI, CRM["P82a_begin_of_the_begin"], Literal(row["startDate"]["value"], datatype=XSD.date)))
             if "endDate" in row:
-                graph.add((timeSpan_URI, CRM["P82b_end_of_the_end"], Literal(row["endDate"]["value"])))
+                graph.add((timeSpan_URI, CRM["P82b_end_of_the_end"], Literal(row["endDate"]["value"], datatype=XSD.date)))
         
 
 
