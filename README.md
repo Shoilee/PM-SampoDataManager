@@ -6,14 +6,16 @@ This repository provides source code for converting colonial collections data fo
 
 # Conversion Documentation
 
-|Graph | Source| Properties
-|----- | ----| ---|
-|collections| ----| [schema](schema/collections.md)|
-|provEvents| ----| [schema](schema/provEvents.md) |
-|actors| ----| ---|
-|histEvents| Download from [colonial collection datahub](https://data.colonialcollections.nl/nmvw/collection-archives)| |
-|thesaurus| Download from [colonial collection datahub](https://data.colonialcollections.nl/nmvw/collection-archives)| |
-|geonames| Extracted from [geonames API](http://secure.geonames.org)| |
+|Graph | Description |Source| Properties
+|----- | --- |----| ---|
+|collections| objects information |----| [schema](schema/collections.md)|
+|provEvents| events, i.e., Acqusition and Transfer of Custody related to object provenance| ----| [schema](schema/provEvents.md) |
+|actors| makers and provenance constituents |----| [schema](schema/actors.md)|
+|histEvents| historical events recorderd by wereldmuseum |Download from [colonial collection datahub](https://data.colonialcollections.nl/nmvw/collection-archives)| |
+|thesaurus| Wereldmuseum thesauri |Download from [colonial collection datahub](https://data.colonialcollections.nl/nmvw/collection-archives)| |
+|geonames| longitute and latitue of the place |Extracted from [geonames API](http://secure.geonames.org)| |
+
+Note: [site](https://data.colonialcollections.nl/nmvw/graph/sites) graph is something that PM-SAMPO didn't cover
 
 
 ## TODO:
