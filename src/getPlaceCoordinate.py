@@ -1,30 +1,54 @@
-# TODO: place geonames in a trig file with the Named Graph
 import requests
 import xml.etree.ElementTree as ET
 from SPARQLWrapper import SPARQLWrapper, JSON
-from rdflib import Graph, URIRef, Literal, Namespace
+from rdflib import Graph, URIRef, Literal, Namespace, Dataset
 import time
 from tqdm import tqdm
 
-# Set up the SPARQL endpoint for the Colonial Collections data
-sparql_endpoint = "https://api.colonialcollections.nl/datasets/nmvw/collection-archives/sparql"
-sparql = SPARQLWrapper(sparql_endpoint)
+# SPARQL Endpoint
+NEW_GRAPH_URI = "https://pressimngmatter.nl/nmvw/graph/geonames"
+ENDPOINT_URL = "https://api.colonialcollections.nl/datasets/nmvw/collection-archives/sparql"
+OUTPUT_FILE = "data/geonames.trig"
+BATCH_SIZE = 1000  # Number of results per query
 
-# Define the SPARQL query to retrieve all ?id with LIMIT and OFFSET placeholders
-base_query = """
-    prefix skos: <http://www.w3.org/2004/02/skos/core#>
-    SELECT ?id WHERE {{
-        ?place skos:exactMatch ?id .
-    }} LIMIT 100 OFFSET {}
-"""
+# Define Namespaces
+CRM = Namespace("http://www.cidoc-crm.org/cidoc-crm/")
+SKOS = Namespace("http://www.w3.org/2004/02/skos/core#")
+DCT = Namespace("http://purl.org/dc/terms/")
+RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
+RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
+PM = Namespace("https://pressingmatter.nl/")
+RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
+WGS84 = Namespace("http://www.w3.org/2003/01/geo/wgs84_pos#")
 
-# Initialize RDF graph
-g = Graph()
+def fetch_sparql_results(offset):
+    """Fetch SPARQL query results from the endpoint with pagination."""
+
+    # Define the SPARQL query to retrieve all ?id with LIMIT and OFFSET placeholders
+    query = f"""
+        PREFIX skos: <{SKOS}>
+   
+        SELECT ?id WHERE {{
+            ?place skos:inScheme <https://hdl.handle.net/20.500.11840/conceptscheme1> .
+            ?place skos:exactMatch ?id .
+        }} LIMIT {BATCH_SIZE} OFFSET {offset}
+    """
+    sparql = SPARQLWrapper(ENDPOINT_URL)
+    sparql.setQuery(query)
+    sparql.setReturnFormat(JSON)
+
+    try:
+        results = sparql.query().convert()
+        return results["results"]["bindings"]
+    except Exception as e:
+        print(f"Error querying SPARQL endpoint: {e}")
+        return []
+
 
 # GeoNames API function to get latitude and longitude by GeoNames ID
 def get_lat_lng(geoname_id):
     username = "sshoilee"  # Replace with your GeoNames username
-    print(f"Querying GeoNames for geoname_id: {geoname_id}")
+    # print(f"Querying GeoNames for geoname_id: {geoname_id}")
     url = f"http://api.geonames.org/get?geonameId={geoname_id}&username={username}"
     response = requests.get(url)
     
@@ -36,54 +60,57 @@ def get_lat_lng(geoname_id):
         
         if lat and lng:
             return lat, lng
+        
+    else:
+        print(f"Response code: {response.status_code}")
     return None, None
 
-# Namespaces for RDF
-WGS84 = Namespace("http://www.w3.org/2003/01/geo/wgs84_pos#")
 
-# Function to retrieve paginated results from SPARQL endpoint
-def fetch_sparql_results(offset=0):
-    sparql.setQuery(base_query.format(offset))
-    sparql.setReturnFormat(JSON)
-    sparqlResponse = sparql.query().convert()
-    return sparqlResponse["results"]["bindings"]
+# Function to store triples in RDF graph
+def store_triples_in_graph(results, ds):
+    graph = ds.graph(URIRef(NEW_GRAPH_URI))
+    for row in results:
+        place = URIRef(row["id"]["value"])
+        lat, lng = get_lat_lng(place.rstrip('/').split("/")[-1])
 
-# Start with an initial offset of 0
-offset = 0
-batch_size = 100
-ttl_file = "data/geonames.ttl"
+        if lat and lng:
+            graph.add((place, WGS84["lat"], Literal(lat)))
+            graph.add((place, WGS84["long"], Literal(lng)))
+        else:
+            print(f"Could not find coordinates for geoname_id: {place}")
+    # print(f"Stored {len(results)} triples in the graph")
 
-try:
-    while True:
-        results = fetch_sparql_results(offset)
-        if not results:
-            break  # Stop fetching when no more results are returned
+def main():
+    start_time = time.time()
+    offset = 0
+    ds = Dataset()
+    try:
+        while True:
+            results = fetch_sparql_results(offset)
+            if not results:
+                break  
 
-        # Process each result in the batch
-        for result in tqdm(results, desc=f"Processing batch {offset // batch_size + 1}"):
-            geoname_uri = result["id"]["value"]
-            geoname_id = geoname_uri.rstrip('/').split('/')[-1]
-            print(f"Retrieved geoname_id: {geoname_id}")
+            store_triples_in_graph(results, ds)
+            offset += BATCH_SIZE
 
-            # Call GeoNames API to get lat and lng for each id
-            lat, lng = get_lat_lng(geoname_id)
-            print(f"Retrieved lat={lat} and lng={lng}")
+    except KeyboardInterrupt:
+        print("\nScript interrupted by user. Saving RDF data before exiting...")
+    finally:
+        # Save RDF data to a Turtle file even if interrupted
+        print(f"Saving extracted triples to {OUTPUT_FILE}...")
+        ds.serialize(OUTPUT_FILE, format="trig")
+        print("Data successfully saved.")
 
-            if lat and lng:
-                # Create RDF triples
-                geo_uri = URIRef(geoname_uri)
-                g.add((geo_uri, WGS84.lat, Literal(lat)))
-                g.add((geo_uri, WGS84.long, Literal(lng)))
+        print("\n")
+        end_time = time.time()
+        execution_time = end_time - start_time
+        print(f"Start Time: {time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(start_time))}")
+        print(f"End Time: {time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(end_time))}")
+        print(f"Total Triples Added: {len(ds)}")
+        hours, rem = divmod(execution_time, 3600)
+        minutes, seconds = divmod(rem, 60)
+        print(f"Execution Time: {int(hours)}h {int(minutes)}m {seconds:.4f}s")
 
-            # Optional: Add a sleep to avoid hitting the GeoNames API too quickly
-            time.sleep(1)
 
-        # Increase the offset for the next batch
-        offset += batch_size
-
-except KeyboardInterrupt:
-    print("\nScript interrupted by user. Saving RDF data before exiting...")
-finally:
-    # Save RDF data to a Turtle file even if interrupted
-    g.serialize(ttl_file, format="turtle")
-    print(f"RDF data saved to {ttl_file}")
+if __name__ == "__main__":
+    main()
