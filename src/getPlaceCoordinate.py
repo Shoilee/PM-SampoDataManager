@@ -69,6 +69,7 @@ def get_lat_lng(geoname_id):
 # Function to store triples in RDF graph
 def store_triples_in_graph(results, ds):
     graph = ds.graph(URIRef(NEW_GRAPH_URI))
+    # TODO: Add type crm:E53_Place to the place URI
     for row in results:
         place = URIRef(row["id"]["value"])
         lat, lng = get_lat_lng(place.rstrip('/').split("/")[-1])
