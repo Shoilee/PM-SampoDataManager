@@ -1,4 +1,4 @@
-This repository provides source code for converting colonial collections data for use in the PM-SAMPO application. It includes codes for processing existing Linked Data and deploying a Fuseki triplestore for querying through endpoint.
+This repository provides source code for converting colonial collections data for use in the [PM-SAMPO](https://pmsampo.demo.seco.cs.aalto.fi/en/) application. It includes codes for processing existing Linked Data and deploying a Fuseki triplestore for querying through endpoint.
 
 - Colonial Collection Endpoint: https://api.colonialcollections.nl/datasets/nmvw/collection-archives/sparql
 
