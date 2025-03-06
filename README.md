@@ -7,12 +7,12 @@ This repository provides source code for converting colonial collections data fo
 
 |Graph | Description |Source| Properties
 |----- | --- |----| ---|
-|collections| objects information |----| [schema](schema/collections.md)|
-|provEvents| events, i.e., Acqusition and Transfer of Custody related to object provenance| ----| [schema](schema/provEvents.md) |
-|actors| makers and provenance constituents |----| [schema](schema/actors.md)|
-|histEvents| historical events recorderd by wereldmuseum |Download from [colonial collection datahub](https://data.colonialcollections.nl/nmvw/collection-archives)| |
+|collections| Objects information |[source code](src/getobjects.py)| [schema](schema/collections.md)|
+|provEvents| Events, i.e., Acqusition and Transfer of Custody related to object provenance| [source code](src/getProvEvents.py)| [schema](schema/provEvents.md) |
+|actors| Makers and provenance constituents |[source code](src/getActors.py)| [schema](schema/actors.md)|
+|histEvents| Historical events recorderd by wereldmuseum |Download from [colonial collection datahub](https://data.colonialcollections.nl/nmvw/collection-archives)| [schema](schema/histEvents.md) |
 |thesaurus| Wereldmuseum thesauri |Download from [colonial collection datahub](https://data.colonialcollections.nl/nmvw/collection-archives)| |
-|geonames| longitute and latitue of the place |Extracted from [geonames API](http://secure.geonames.org)| |
+|geonames| Longitute and latitue of the place |Extracted from [geonames API](http://secure.geonames.org)| |
 
 Note: [site](https://data.colonialcollections.nl/nmvw/graph/sites) graph is not covered in PM-SAMPO.
 
