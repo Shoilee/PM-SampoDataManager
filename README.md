@@ -29,9 +29,9 @@ PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#>  
 ```
 
+### **Objects (Class: crm:E22_Human-Made_Object)**
 | **Property**        | **Predicate** | **Previous Predicate** |
 |---------------------|--------------|------------------------|
-| **Objects (Class: crm:E22_Human-Made_Object)** | | |
 | Title              | `dct:title`   | same as before                    |
 | Image              | `pm:shown_by` | `crm:P65_shows_visual_item/la:digitally_shown_by/la:access_point` |
 | Identifier         | `pm:identified_by` | `crm:P1_is_identified_by/crm:P190_has_symbolic_content` (filtered by `aat:300445023`) |
@@ -43,13 +43,17 @@ PREFIX wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 | Production Place | `pm:production_place` | `crm:P108i_was_produced_by/crm:P7_took_place_at` |
 | Production Time  | `pm:production_time_span` | `crm:P108i_was_produced_by/crm:P4_has_time-span` |
 | Historical Event | `pm:related_to` | `crm:P141i_was_assigned_by/crm:P141_assigned` |
-| **Provenance Events (Class: crm:E8_Acquisition or crm:E10_Transfer_of_Custody)** | | |
+### **Provenance Events (Class: crm:E8_Acquisition or crm:E10_Transfer_of_Custody)**
+| **Property**        | **Predicate** | **Previous Predicate** |
+|---------------------|--------------|------------------------|
 | Connection Object | `^crm:P24i_changed_ownership_through` | same as before |
 | Events Label     | `rdfs:label` | same as before |
 | Event Type      | `crm:P2_has_type` | same as before |
 | From Actor     | `crm:P23_transferred_title_from` | same as before |
 | To Actor       | `crm:P22_transferred_title_to` | same as before |
-| **Actors (Class: crm:E21_Person or crm:E39_Actor or crm:E74_Group)** | | |
+### **Actors (Class: crm:E21_Person or crm:E39_Actor or crm:E74_Group)**
+| **Property**        | **Predicate** | **Previous Predicate** |
+|---------------------|--------------|------------------------|
 | Label          | `rdfs:label` | same as before |
 | Names         | `pm:identified_by` | `crm:P1_is_identified_by/crm:P190_has_symbolic_content` (filtered by `aat:300404650`) |
 | Role          | `pm:roles` | `P2_has_type / (skos:prefLabel | rdfs:label)` (filtered by `aat:300404650`) |
@@ -58,20 +62,23 @@ PREFIX wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 | Biography    | `pm:biography` | `crm:P67i_is_referred_to_by/crm:P190_has_symbolic_content` (filtered by `aat:300435422`) |
 | Remarks      | `pm:remarks` | `crm:P67i_is_referred_to_by/crm:P190_has_symbolic_content` (filtered by `aat:300435415`) |
 | Profession   | `pm:profession` | `crm:P67i_is_referred_to_by/crm:P190_has_symbolic_content` (filtered by `aat:300393201`) |
-| **Historical Event (Class: crm:E5_Event)** | | |
+### **Historical Event (Class: crm:E5_Event)**
+| **Property**        | **Predicate** | **Previous Predicate** |
+|---------------------|--------------|------------------------|
 | Label        | `crm:P1_is_identified_by` | same as before |
 | Time Span    | `crm:P4_has_time-span` | same as before |
 | Description  | `crm:P67i_is_referred_to_by` | same as before |
-| **Place (Class: crm:E53_Place)** | | |
+### **Place (Class: crm:E53_Place)**
+| **Property**        | **Predicate** | **Previous Predicate** |
+|---------------------|--------------|------------------------|
 | Longitude    | `wgs84:long` | new addition |
 | Latitude     | `wgs84:lat` | new addition |
-| **Time-span (Class: crm:E52_Time-Span)** | | |
+### **Time-span (Class: crm:E52_Time-Span)** 
+| **Property**        | **Predicate** | **Previous Predicate** |
+|---------------------|--------------|------------------------|
 | Start Date   | `crm:P82a_begin_of_the_begin` | same as before |
 | End Date     | `crm:P82b_end_of_the_end` | same as before |
 
-
-## TODO:
-- add data source
 
 
 # Build Fuseki container for publishing the data
@@ -93,3 +100,5 @@ docker rm colonial-collections
 docker run -d -p 3048:3030 --restart unless-stopped --name colonial-collections colonial-collections-fuseki
 ```
 
+# TODO:
+- add data source
