@@ -1,0 +1,3076 @@
+@prefix ns1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+<https://pressimngmatter.nl/nmvw/graph/geonames> {
+    <http://sws.geonames.org/2233387/> ns1:lat "6" ;
+        ns1:long "12.5" .
+
+    <http://sws.geonames.org/2287781/> ns1:lat "8" ;
+        ns1:long "-5.5" .
+
+    <http://sws.geonames.org/2328926/> ns1:lat "10" ;
+        ns1:long "8" .
+
+    <http://sws.geonames.org/2434508/> ns1:lat "15" ;
+        ns1:long "19" .
+
+    <http://sws.geonames.org/2464461/> ns1:lat "34" ;
+        ns1:long "9" .
+
+    <http://sws.geonames.org/2542007/> ns1:lat "28.5" ;
+        ns1:long "-10" .
+
+    <http://sws.geonames.org/2589581/> ns1:lat "28" ;
+        ns1:long "3" .
+
+    <http://sws.geonames.org/3351879/> ns1:lat "-12.5" ;
+        ns1:long "18.5" .
+
+    <http://sws.geonames.org/337996/> ns1:lat "9" ;
+        ns1:long "39.5" .
+
+    <http://sws.geonames.org/357994/> ns1:lat "27" ;
+        ns1:long "30" .
+
+    <http://vocab.getty.edu/tgn/1103427> ns1:lat "-23.93333" ;
+        ns1:long "35.46889" .
+
+    <http://vocab.getty.edu/tgn/1111745> ns1:lat "34.93077" ;
+        ns1:long "71.62016" .
+
+    <http://vocab.getty.edu/tgn/6002136> ns1:lat "48.51116" ;
+        ns1:long "-73.3676" .
+
+    <http://vocab.getty.edu/tgn/6002410> ns1:lat "49.405" ;
+        ns1:long "-71.85389" .
+
+    <http://vocab.getty.edu/tgn/7001437> ns1:lat "13.91337" ;
+        ns1:long "4.1938" .
+
+    <http://vocab.getty.edu/tgn/7001604> ns1:lat "22.95809" ;
+        ns1:long "114.18651" .
+
+    <http://vocab.getty.edu/tgn/7016886> ns1:lat "3.43329" ;
+        ns1:long "-73.90978" .
+
+    <http://vocab.getty.edu/tgn/7017971> ns1:lat "42.2614" ;
+        ns1:long "125.258" .
+
+    <http://vocab.getty.edu/tgn/7032926> ns1:lat "-2.5838" ;
+        ns1:long "28.9545" .
+
+    <http://vocab.getty.edu/tgn/7032931> ns1:lat "-2.5864" ;
+        ns1:long "28.9068" .
+
+    <http://vocab.getty.edu/tgn/8711610> ns1:lat "22.61497" ;
+        ns1:long "-98.53244" .
+
+    <http://vocab.getty.edu/tgn/8711613> ns1:lat "22.62194" ;
+        ns1:long "-98.49111" .
+
+    <https://sws.geonames.org/1027917/> ns1:lat "-10.47472" ;
+        ns1:long "40.43833" .
+
+    <https://sws.geonames.org/10338121/> ns1:lat "31.8649" ;
+        ns1:long "11.7933" .
+
+    <https://sws.geonames.org/10374934/> ns1:lat "30.34164" ;
+        ns1:long "-9.50356" .
+
+    <https://sws.geonames.org/1053384/> ns1:lat "-18.1492" ;
+        ns1:long "49.40234" .
+
+    <https://sws.geonames.org/1055418/> ns1:lat "-16.58333" ;
+        ns1:long "49.28333" .
+
+    <https://sws.geonames.org/1055428/> ns1:lat "-21" ;
+        ns1:long "45" .
+
+    <https://sws.geonames.org/1055429/> ns1:lat "-23.35" ;
+        ns1:long "43.66667" .
+
+    <https://sws.geonames.org/1055467/> ns1:lat "-18" ;
+        ns1:long "49" .
+
+    <https://sws.geonames.org/1058380/> ns1:lat "-23.61667" ;
+        ns1:long "47" .
+
+    <https://sws.geonames.org/1058532/> ns1:lat "-18.94948" ;
+        ns1:long "48.23007" .
+
+    <https://sws.geonames.org/1060673/> ns1:lat "-18.91667" ;
+        ns1:long "47.8" .
+
+    <https://sws.geonames.org/1061605/> ns1:lat "-22.14862" ;
+        ns1:long "48.01055" .
+
+    <https://sws.geonames.org/1061912/> ns1:lat "-18.06354" ;
+        ns1:long "44.02951" .
+
+    <https://sws.geonames.org/1062662/> ns1:lat "-17" ;
+        ns1:long "47" .
+
+    <https://sws.geonames.org/1062663/> ns1:lat "-15.71667" ;
+        ns1:long "46.31667" .
+
+    <https://sws.geonames.org/1063674/> ns1:lat "-17.48333" ;
+        ns1:long "46.1" .
+
+    <https://sws.geonames.org/1064128/> ns1:lat "-20.53333" ;
+        ns1:long "47.33333" .
+
+    <https://sws.geonames.org/1064890/> ns1:lat "-21.45267" ;
+        ns1:long "47.08569" .
+
+    <https://sws.geonames.org/1065811/> ns1:lat "-23.50198" ;
+        ns1:long "44.49832" .
+
+    <https://sws.geonames.org/1066514/> ns1:lat "-19.83333" ;
+        ns1:long "46.85" .
+
+    <https://sws.geonames.org/1069166/> ns1:lat "-19.86586" ;
+        ns1:long "47.03333" .
+
+    <https://sws.geonames.org/1070938/> ns1:lat "-19" ;
+        ns1:long "47" .
+
+    <https://sws.geonames.org/1070940/> ns1:lat "-18.91368" ;
+        ns1:long "47.53613" .
+
+    <https://sws.geonames.org/1074222/> ns1:lat "-25.11667" ;
+        ns1:long "44.45" .
+
+    <https://sws.geonames.org/1079088/> ns1:lat "-20.53034" ;
+        ns1:long "47.24344" .
+
+    <https://sws.geonames.org/1080273/> ns1:lat "-18.73333" ;
+        ns1:long "47.56667" .
+
+    <https://sws.geonames.org/1083968/> ns1:lat "-21.83333" ;
+        ns1:long "46.93333" .
+
+    <https://sws.geonames.org/1084742/> ns1:lat "-17.5" ;
+        ns1:long "48.5" .
+
+    <https://sws.geonames.org/10960271/> ns1:lat "34.18543" ;
+        ns1:long "-6.57824" .
+
+    <https://sws.geonames.org/11288215/> ns1:lat "3.65" ;
+        ns1:long "21.26667" .
+
+    <https://sws.geonames.org/11593072/> ns1:lat "-9.29327" ;
+        ns1:long "14.24703" .
+
+    <https://sws.geonames.org/11646897/> ns1:lat "32.52699" ;
+        ns1:long "-5.78397" .
+
+    <https://sws.geonames.org/11789231/> ns1:lat "9.61158" ;
+        ns1:long "15.39185" .
+
+    <https://sws.geonames.org/11870924/> ns1:lat "-2.54318" ;
+        ns1:long "36.82268" .
+
+    <https://sws.geonames.org/11877544/> ns1:lat "-21.22288" ;
+        ns1:long "55.3176" .
+
+    <https://sws.geonames.org/148679/> ns1:lat "-1.91667" ;
+        ns1:long "31.25" .
+
+    <https://sws.geonames.org/148726/> ns1:lat "-6.15557" ;
+        ns1:long "39.3417" .
+
+    <https://sws.geonames.org/148996/> ns1:lat "-1" ;
+        ns1:long "33" .
+
+    <https://sws.geonames.org/149129/> ns1:lat "-3.49194" ;
+        ns1:long "31.96389" .
+
+    <https://sws.geonames.org/149156/> ns1:lat "-6.45012" ;
+        ns1:long "31.35986" .
+
+    <https://sws.geonames.org/149189/> ns1:lat "-4.98333" ;
+        ns1:long "33.16667" .
+
+    <https://sws.geonames.org/149228/> ns1:lat "-7.10508" ;
+        ns1:long "37.65416" .
+
+    <https://sws.geonames.org/149418/> ns1:lat "-5.06667" ;
+        ns1:long "32.73333" .
+
+    <https://sws.geonames.org/149437/> ns1:lat "-9.25" ;
+        ns1:long "33.65" .
+
+    <https://sws.geonames.org/149554/> ns1:lat "-6.93333" ;
+        ns1:long "37.71667" .
+
+    <https://sws.geonames.org/149590/> ns1:lat "-6" ;
+        ns1:long "35" .
+
+    <https://sws.geonames.org/149595/> ns1:lat "-5.2" ;
+        ns1:long "38.28333" .
+
+    <https://sws.geonames.org/149597/> ns1:lat "-6" ;
+        ns1:long "35" .
+
+    <https://sws.geonames.org/149653/> ns1:lat "-5.25" ;
+        ns1:long "32.83333" .
+
+    <https://sws.geonames.org/149879/> ns1:lat "-4.81629" ;
+        ns1:long "34.74358" .
+
+    <https://sws.geonames.org/150004/> ns1:lat "-3.66667" ;
+        ns1:long "32.91667" .
+
+    <https://sws.geonames.org/150006/> ns1:lat "-3.66393" ;
+        ns1:long "33.42118" .
+
+    <https://sws.geonames.org/150276/> ns1:lat "-4.06667" ;
+        ns1:long "37.73333" .
+
+    <https://sws.geonames.org/150341/> ns1:lat "-6.0439" ;
+        ns1:long "38.77567" .
+
+    <https://sws.geonames.org/150602/> ns1:lat "-7.25" ;
+        ns1:long "38.83333" .
+
+    <https://sws.geonames.org/151609/> ns1:lat "-3.18714" ;
+        ns1:long "35.55176" .
+
+    <https://sws.geonames.org/151863/> ns1:lat "-4.76667" ;
+        ns1:long "33.26667" .
+
+    <https://sws.geonames.org/152169/> ns1:lat "-4.15" ;
+        ns1:long "37.85" .
+
+    <https://sws.geonames.org/152219/> ns1:lat "-2.75" ;
+        ns1:long "33.08333" .
+
+    <https://sws.geonames.org/152224/> ns1:lat "-2.51667" ;
+        ns1:long "32.9" .
+
+    <https://sws.geonames.org/153209/> ns1:lat "-3.35" ;
+        ns1:long "37.33333" .
+
+    <https://sws.geonames.org/153214/> ns1:lat "-7.91667" ;
+        ns1:long "37.25" .
+
+    <https://sws.geonames.org/153377/> ns1:lat "-5.06667" ;
+        ns1:long "38.91667" .
+
+    <https://sws.geonames.org/153989/> ns1:lat "-6.11667" ;
+        ns1:long "37.56667" .
+
+    <https://sws.geonames.org/154375/> ns1:lat "-8.2" ;
+        ns1:long "33.33333" .
+
+    <https://sws.geonames.org/154848/> ns1:lat "-3.58333" ;
+        ns1:long "35.83333" .
+
+    <https://sws.geonames.org/154924/> ns1:lat "-6.2" ;
+        ns1:long "38.41667" .
+
+    <https://sws.geonames.org/155524/> ns1:lat "-3.25" ;
+        ns1:long "37.23333" .
+
+    <https://sws.geonames.org/155735/> ns1:lat "-4.86667" ;
+        ns1:long "38.83333" .
+
+    <https://sws.geonames.org/156479/> ns1:lat "-5.15" ;
+        ns1:long "38.48333" .
+
+    <https://sws.geonames.org/157409/> ns1:lat "-8.51667" ;
+        ns1:long "37.36667" .
+
+    <https://sws.geonames.org/157448/> ns1:lat "-5.85" ;
+        ns1:long "34.95" .
+
+    <https://sws.geonames.org/157449/> ns1:lat "-3.75" ;
+        ns1:long "37.63333" .
+
+    <https://sws.geonames.org/157452/> ns1:lat "-3.07583" ;
+        ns1:long "37.35333" .
+
+    <https://sws.geonames.org/157732/> ns1:lat "-4.75" ;
+        ns1:long "30.5" .
+
+    <https://sws.geonames.org/157738/> ns1:lat "-4.87694" ;
+        ns1:long "29.62667" .
+
+    <https://sws.geonames.org/158118/> ns1:lat "-2.38333" ;
+        ns1:long "33.08333" .
+
+    <https://sws.geonames.org/158563/> ns1:lat "-3.28278" ;
+        ns1:long "30.96417" .
+
+    <https://sws.geonames.org/158611/> ns1:lat "-1.73333" ;
+        ns1:long "31.71667" .
+
+    <https://sws.geonames.org/159067/> ns1:lat "-7.85" ;
+        ns1:long "35.55" .
+
+    <https://sws.geonames.org/161290/> ns1:lat "-6.44222" ;
+        ns1:long "38.90422" .
+
+    <https://sws.geonames.org/161322/> ns1:lat "-3" ;
+        ns1:long "36" .
+
+    <https://sws.geonames.org/161325/> ns1:lat "-3.36667" ;
+        ns1:long "36.68333" .
+
+    <https://sws.geonames.org/175122/> ns1:lat "-6" ;
+        ns1:long "29.5" .
+
+    <https://sws.geonames.org/176403/> ns1:lat "-9.39162" ;
+        ns1:long "28.52453" .
+
+    <https://sws.geonames.org/178245/> ns1:lat "-3.35335" ;
+        ns1:long "40.02095" .
+
+    <https://sws.geonames.org/179750/> ns1:lat "-2.02042" ;
+        ns1:long "37.37212" .
+
+    <https://sws.geonames.org/180956/> ns1:lat "-0.40654" ;
+        ns1:long "34.17712" .
+
+    <https://sws.geonames.org/181032/> ns1:lat "-1.14665" ;
+        ns1:long "36.96087" .
+
+    <https://sws.geonames.org/181055/> ns1:lat "3.5" ;
+        ns1:long "36" .
+
+    <https://sws.geonames.org/181605/> ns1:lat "0.4786" ;
+        ns1:long "36.0274" .
+
+    <https://sws.geonames.org/182701/> ns1:lat "-0.42013" ;
+        ns1:long "36.94759" .
+
+    <https://sws.geonames.org/182763/> ns1:lat "-0.5" ;
+        ns1:long "34.5" .
+
+    <https://sws.geonames.org/183027/> ns1:lat "0.03813" ;
+        ns1:long "36.36339" .
+
+    <https://sws.geonames.org/184433/> ns1:lat "0.00624" ;
+        ns1:long "37.07398" .
+
+    <https://sws.geonames.org/184622/> ns1:lat "-0.30719" ;
+        ns1:long "36.07225" .
+
+    <https://sws.geonames.org/184706/> ns1:lat "-0.76582" ;
+        ns1:long "36.35561" .
+
+    <https://sws.geonames.org/184707/> ns1:lat "-0.71383" ;
+        ns1:long "36.43261" .
+
+    <https://sws.geonames.org/184745/> ns1:lat "-1.28333" ;
+        ns1:long "36.81667" .
+
+    <https://sws.geonames.org/184990/> ns1:lat "-0.71549" ;
+        ns1:long "37.35401" .
+
+    <https://sws.geonames.org/185702/> ns1:lat "0.33474" ;
+        ns1:long "34.48796" .
+
+    <https://sws.geonames.org/186180/> ns1:lat "3.52661" ;
+        ns1:long "39.0561" .
+
+    <https://sws.geonames.org/186301/> ns1:lat "-4.05466" ;
+        ns1:long "39.66359" .
+
+    <https://sws.geonames.org/186827/> ns1:lat "0.04626" ;
+        ns1:long "37.65587" .
+
+    <https://sws.geonames.org/187968/> ns1:lat "-3.21799" ;
+        ns1:long "40.11692" .
+
+    <https://sws.geonames.org/188492/> ns1:lat "-1.52233" ;
+        ns1:long "37.26521" .
+
+    <https://sws.geonames.org/189386/> ns1:lat "-1.1136" ;
+        ns1:long "36.64205" .
+
+    <https://sws.geonames.org/190537/> ns1:lat "3.95254" ;
+        ns1:long "36.21408" .
+
+    <https://sws.geonames.org/191220/> ns1:lat "1.01572" ;
+        ns1:long "35.00622" .
+
+    <https://sws.geonames.org/191245/> ns1:lat "-0.10221" ;
+        ns1:long "34.76171" .
+
+    <https://sws.geonames.org/192079/> ns1:lat "-1.00819" ;
+        ns1:long "34.87809" .
+
+    <https://sws.geonames.org/192481/> ns1:lat "-0.07727" ;
+        ns1:long "35.04815" .
+
+    <https://sws.geonames.org/192710/> ns1:lat "-1.17139" ;
+        ns1:long "36.83556" .
+
+    <https://sws.geonames.org/192950/> ns1:lat "1" ;
+        ns1:long "38" .
+
+    <https://sws.geonames.org/194038/> ns1:lat "0.20387" ;
+        ns1:long "35.105" .
+
+    <https://sws.geonames.org/194160/> ns1:lat "1.23889" ;
+        ns1:long "35.11194" .
+
+    <https://sws.geonames.org/195272/> ns1:lat "0.28422" ;
+        ns1:long "34.75229" .
+
+    <https://sws.geonames.org/196231/> ns1:lat "0.35462" ;
+        ns1:long "37.58218" .
+
+    <https://sws.geonames.org/196482/> ns1:lat "4.32745" ;
+        ns1:long "36.2204" .
+
+    <https://sws.geonames.org/197334/> ns1:lat "-0.50397" ;
+        ns1:long "36.31845" .
+
+    <https://sws.geonames.org/198629/> ns1:lat "0.52036" ;
+        ns1:long "35.26993" .
+
+    <https://sws.geonames.org/199989/> ns1:lat "0.46005" ;
+        ns1:long "34.11169" .
+
+    <https://sws.geonames.org/200067/> ns1:lat "0.5635" ;
+        ns1:long "34.56055" .
+
+    <https://sws.geonames.org/201229/> ns1:lat "-0.17359" ;
+        ns1:long "34.9189" .
+
+    <https://sws.geonames.org/202217/> ns1:lat "-2.07444" ;
+        ns1:long "29.75667" .
+
+    <https://sws.geonames.org/203112/> ns1:lat "-2.59667" ;
+        ns1:long "29.73944" .
+
+    <https://sws.geonames.org/203312/> ns1:lat "-2.5" ;
+        ns1:long "23.5" .
+
+    <https://sws.geonames.org/203717/> ns1:lat "0.76755" ;
+        ns1:long "24.43973" .
+
+    <https://sws.geonames.org/204047/> ns1:lat "4.09805" ;
+        ns1:long "22.44587" .
+
+    <https://sws.geonames.org/204405/> ns1:lat "-3.39534" ;
+        ns1:long "29.13779" .
+
+    <https://sws.geonames.org/204518/> ns1:lat "4.11932" ;
+        ns1:long "22.43769" .
+
+    <https://sws.geonames.org/204529/> ns1:lat "-0.35701" ;
+        ns1:long "25.43189" .
+
+    <https://sws.geonames.org/204698/> ns1:lat "-0.34656" ;
+        ns1:long "20.78208" .
+
+    <https://sws.geonames.org/205413/> ns1:lat "-3.16667" ;
+        ns1:long "28.25" .
+
+    <https://sws.geonames.org/205703/> ns1:lat "-9" ;
+        ns1:long "26" .
+
+    <https://sws.geonames.org/205828/> ns1:lat "-4.96667" ;
+        ns1:long "23.45" .
+
+    <https://sws.geonames.org/206041/> ns1:lat "0.38333" ;
+        ns1:long "29.9" .
+
+    <https://sws.geonames.org/206410/> ns1:lat "-3.1" ;
+        ns1:long "22.76667" .
+
+    <https://sws.geonames.org/206938/> ns1:lat "-0.66667" ;
+        ns1:long "28.75" .
+
+    <https://sws.geonames.org/208988/> ns1:lat "4.30276" ;
+        ns1:long "21.18949" .
+
+    <https://sws.geonames.org/209345/> ns1:lat "2.50155" ;
+        ns1:long "27.63038" .
+
+    <https://sws.geonames.org/209610/> ns1:lat "-3" ;
+        ns1:long "26" .
+
+    <https://sws.geonames.org/211069/> ns1:lat "-0.15837" ;
+        ns1:long "29.23859" .
+
+    <https://sws.geonames.org/211192/> ns1:lat "-3.01667" ;
+        ns1:long "26.93333" .
+
+    <https://sws.geonames.org/211442/> ns1:lat "0.7771" ;
+        ns1:long "24.27563" .
+
+    <https://sws.geonames.org/211676/> ns1:lat "-4.28621" ;
+        ns1:long "20.02868" .
+
+    <https://sws.geonames.org/211734/> ns1:lat "2.15127" ;
+        ns1:long "21.51672" .
+
+    <https://sws.geonames.org/211872/> ns1:lat "3.36448" ;
+        ns1:long "23.88208" .
+
+    <https://sws.geonames.org/212507/> ns1:lat "-2.5" ;
+        ns1:long "28" .
+
+    <https://sws.geonames.org/212508/> ns1:lat "-2" ;
+        ns1:long "29.16667" .
+
+    <https://sws.geonames.org/212705/> ns1:lat "-6.07953" ;
+        ns1:long "25.89758" .
+
+    <https://sws.geonames.org/212911/> ns1:lat "-9.29243" ;
+        ns1:long "25.06224" .
+
+    <https://sws.geonames.org/214140/> ns1:lat "-5.35" ;
+        ns1:long "21.41667" .
+
+    <https://sws.geonames.org/214612/> ns1:lat "-8.73333" ;
+        ns1:long "25" .
+
+    <https://sws.geonames.org/214974/> ns1:lat "-5.94749" ;
+        ns1:long "29.19471" .
+
+    <https://sws.geonames.org/215711/> ns1:lat "1.85" ;
+        ns1:long "29.96667" .
+
+    <https://sws.geonames.org/215800/> ns1:lat "0.77958" ;
+        ns1:long "24.2703" .
+
+    <https://sws.geonames.org/216449/> ns1:lat "-6.74504" ;
+        ns1:long "23.95328" .
+
+    <https://sws.geonames.org/216661/> ns1:lat "0.2" ;
+        ns1:long "18.93333" .
+
+    <https://sws.geonames.org/216959/> ns1:lat "3.61667" ;
+        ns1:long "28.56667" .
+
+    <https://sws.geonames.org/217208/> ns1:lat "3.78806" ;
+        ns1:long "29.77404" .
+
+    <https://sws.geonames.org/218250/> ns1:lat "3.81667" ;
+        ns1:long "23.66667" .
+
+    <https://sws.geonames.org/218276/> ns1:lat "3.6539" ;
+        ns1:long "26.12851" .
+
+    <https://sws.geonames.org/219414/> ns1:lat "1.23909" ;
+        ns1:long "23.61598" .
+
+    <https://sws.geonames.org/219441/> ns1:lat "4.73281" ;
+        ns1:long "24.67801" .
+
+    <https://sws.geonames.org/220213/> ns1:lat "1.22608" ;
+        ns1:long "23.58026" .
+
+    <https://sws.geonames.org/220289/> ns1:lat "4.03873" ;
+        ns1:long "25.85156" .
+
+    <https://sws.geonames.org/220377/> ns1:lat "3.63335" ;
+        ns1:long "26.76837" .
+
+    <https://sws.geonames.org/2212709/> ns1:lat "26" ;
+        ns1:long "13" .
+
+    <https://sws.geonames.org/2214600/> ns1:lat "24.5" ;
+        ns1:long "13" .
+
+    <https://sws.geonames.org/2214602/> ns1:lat "24.6" ;
+        ns1:long "15.6" .
+
+    <https://sws.geonames.org/2214603/> ns1:lat "25.91552" ;
+        ns1:long "13.91839" .
+
+    <https://sws.geonames.org/2214846/> ns1:lat "32.37535" ;
+        ns1:long "15.09254" .
+
+    <https://sws.geonames.org/2215636/> ns1:lat "28" ;
+        ns1:long "17" .
+
+    <https://sws.geonames.org/2216645/> ns1:lat "29.12684" ;
+        ns1:long "15.94772" .
+
+    <https://sws.geonames.org/2217350/> ns1:lat "25.91667" ;
+        ns1:long "10.58333" .
+
+    <https://sws.geonames.org/2217351/> ns1:lat "24.96334" ;
+        ns1:long "10.18003" .
+
+    <https://sws.geonames.org/2217361/> ns1:lat "32" ;
+        ns1:long "13" .
+
+    <https://sws.geonames.org/2217362/> ns1:lat "32.17222" ;
+        ns1:long "13.02028" .
+
+    <https://sws.geonames.org/2217440/> ns1:lat "30.13366" ;
+        ns1:long "9.50072" .
+
+    <https://sws.geonames.org/2217514/> ns1:lat "26" ;
+        ns1:long "14" .
+
+    <https://sws.geonames.org/2219739/> ns1:lat "24.95139" ;
+        ns1:long "14.64861" .
+
+    <https://sws.geonames.org/2219944/> ns1:lat "27.73333" ;
+        ns1:long "17.05" .
+
+    <https://sws.geonames.org/2220715/> ns1:lat "11.26235" ;
+        ns1:long "14.96529" .
+
+    <https://sws.geonames.org/2220853/> ns1:lat "3.51667" ;
+        ns1:long "15.05" .
+
+    <https://sws.geonames.org/2220957/> ns1:lat "3.86667" ;
+        ns1:long "11.51667" .
+
+    <https://sws.geonames.org/2221061/> ns1:lat "4.00293" ;
+        ns1:long "9.62372" .
+
+    <https://sws.geonames.org/2221374/> ns1:lat "9.52687" ;
+        ns1:long "13.42877" .
+
+    <https://sws.geonames.org/2221504/> ns1:lat "4.075" ;
+        ns1:long "9.36005" .
+
+    <https://sws.geonames.org/2221742/> ns1:lat "5.14984" ;
+        ns1:long "9.38247" .
+
+    <https://sws.geonames.org/2221788/> ns1:lat "5.2" ;
+        ns1:long "9.3" .
+
+    <https://sws.geonames.org/2221894/> ns1:lat "4.1517" ;
+        ns1:long "9.2514" .
+
+    <https://sws.geonames.org/2222221/> ns1:lat "5.79873" ;
+        ns1:long "10.16094" .
+
+    <https://sws.geonames.org/2222230/> ns1:lat "2.93333" ;
+        ns1:long "11.98333" .
+
+    <https://sws.geonames.org/2222354/> ns1:lat "6.01667" ;
+        ns1:long "10.31667" .
+
+    <https://sws.geonames.org/2222378/> ns1:lat "10.51398" ;
+        ns1:long "13.58626" .
+
+    <https://sws.geonames.org/2222473/> ns1:lat "9.58333" ;
+        ns1:long "13.5" .
+
+    <https://sws.geonames.org/2222568/> ns1:lat "9.3839" ;
+        ns1:long "13.50231" .
+
+    <https://sws.geonames.org/2222934/> ns1:lat "5.5" ;
+        ns1:long "10.66667" .
+
+    <https://sws.geonames.org/2223198/> ns1:lat "6.25" ;
+        ns1:long "10.43333" .
+
+    <https://sws.geonames.org/2223293/> ns1:lat "4.16667" ;
+        ns1:long "11.53333" .
+
+    <https://sws.geonames.org/2223603/> ns1:lat "8.5" ;
+        ns1:long "14" .
+
+    <https://sws.geonames.org/2223763/> ns1:lat "4.9547" ;
+        ns1:long "9.9404" .
+
+    <https://sws.geonames.org/2224080/> ns1:lat "2.8" ;
+        ns1:long "11.13333" .
+
+    <https://sws.geonames.org/2224688/> ns1:lat "2.61667" ;
+        ns1:long "14.01667" .
+
+    <https://sws.geonames.org/2224827/> ns1:lat "7.32765" ;
+        ns1:long "13.58472" .
+
+    <https://sws.geonames.org/2224996/> ns1:lat "4.918" ;
+        ns1:long "9.8962" .
+
+    <https://sws.geonames.org/2225470/> ns1:lat "6.68333" ;
+        ns1:long "14.38333" .
+
+    <https://sws.geonames.org/2225991/> ns1:lat "11.04611" ;
+        ns1:long "14.14011" .
+
+    <https://sws.geonames.org/2226275/> ns1:lat "10.74244" ;
+        ns1:long "13.80227" .
+
+    <https://sws.geonames.org/2228106/> ns1:lat "6.26667" ;
+        ns1:long "10.03333" .
+
+    <https://sws.geonames.org/2228373/> ns1:lat "10.59095" ;
+        ns1:long "14.31593" .
+
+    <https://sws.geonames.org/2228620/> ns1:lat "10.75" ;
+        ns1:long "13.66667" .
+
+    <https://sws.geonames.org/2228675/> ns1:lat "5.75132" ;
+        ns1:long "9.3137" .
+
+    <https://sws.geonames.org/2229336/> ns1:lat "4.26667" ;
+        ns1:long "10.13333" .
+
+    <https://sws.geonames.org/2229752/> ns1:lat "4.6363" ;
+        ns1:long "9.4469" .
+
+    <https://sws.geonames.org/2229761/> ns1:lat "2.93725" ;
+        ns1:long "9.90765" .
+
+    <https://sws.geonames.org/2230285/> ns1:lat "6.08303" ;
+        ns1:long "11.4905" .
+
+    <https://sws.geonames.org/2230510/> ns1:lat "5.23824" ;
+        ns1:long "10.456" .
+
+    <https://sws.geonames.org/2230832/> ns1:lat "9.63333" ;
+        ns1:long "13.46667" .
+
+    <https://sws.geonames.org/2231319/> ns1:lat "5.88333" ;
+        ns1:long "14.55" .
+
+    <https://sws.geonames.org/2231320/> ns1:lat "9.30143" ;
+        ns1:long "13.39771" .
+
+    <https://sws.geonames.org/2231506/> ns1:lat "5.72662" ;
+        ns1:long "10.89865" .
+
+    <https://sws.geonames.org/2231564/> ns1:lat "5.4685" ;
+        ns1:long "9.8818" .
+
+    <https://sws.geonames.org/2231835/> ns1:lat "3.83333" ;
+        ns1:long "14.16667" .
+
+    <https://sws.geonames.org/2231881/> ns1:lat "3.65" ;
+        ns1:long "10.76667" .
+
+    <https://sws.geonames.org/2232283/> ns1:lat "2.9" ;
+        ns1:long "11.15" .
+
+    <https://sws.geonames.org/2232593/> ns1:lat "4.04827" ;
+        ns1:long "9.70428" .
+
+    <https://sws.geonames.org/2232997/> ns1:lat "3.76667" ;
+        ns1:long "9.98333" .
+
+    <https://sws.geonames.org/2233364/> ns1:lat "12.96689" ;
+        ns1:long "14.54759" .
+
+    <https://sws.geonames.org/2233376/> ns1:lat "4.75" ;
+        ns1:long "11.83333" .
+
+    <https://sws.geonames.org/2233387/> ns1:lat "6" ;
+        ns1:long "12.5" .
+
+    <https://sws.geonames.org/2233570/> ns1:lat "4.71159" ;
+        ns1:long "14.59328" .
+
+    <https://sws.geonames.org/2234663/> ns1:lat "4.43333" ;
+        ns1:long "14.36667" .
+
+    <https://sws.geonames.org/2234974/> ns1:lat "5.9597" ;
+        ns1:long "10.14597" .
+
+    <https://sws.geonames.org/2234986/> ns1:lat "6.05" ;
+        ns1:long "10.23333" .
+
+    <https://sws.geonames.org/2235029/> ns1:lat "5.88737" ;
+        ns1:long "10.01176" .
+
+    <https://sws.geonames.org/2235186/> ns1:lat "6.08333" ;
+        ns1:long "10.1" .
+
+    <https://sws.geonames.org/2235189/> ns1:lat "5.47775" ;
+        ns1:long "10.41759" .
+
+    <https://sws.geonames.org/2235293/> ns1:lat "6.11667" ;
+        ns1:long "10.25" .
+
+    <https://sws.geonames.org/2235549/> ns1:lat "4.08333" ;
+        ns1:long "12.98333" .
+
+    <https://sws.geonames.org/2235814/> ns1:lat "2.78333" ;
+        ns1:long "10.56667" .
+
+    <https://sws.geonames.org/2236015/> ns1:lat "6.83333" ;
+        ns1:long "13.25" .
+
+    <https://sws.geonames.org/2236053/> ns1:lat "3.98333" ;
+        ns1:long "13.18333" .
+
+    <https://sws.geonames.org/2236355/> ns1:lat "-6.58717" ;
+        ns1:long "13.51966" .
+
+    <https://sws.geonames.org/2236566/> ns1:lat "-7.10719" ;
+        ns1:long "15.44056" .
+
+    <https://sws.geonames.org/2237655/> ns1:lat "-9.98333" ;
+        ns1:long "14.48333" .
+
+    <https://sws.geonames.org/223816/> ns1:lat "11.83333" ;
+        ns1:long "42.5" .
+
+    <https://sws.geonames.org/223817/> ns1:lat "11.58901" ;
+        ns1:long "43.14503" .
+
+    <https://sws.geonames.org/2238342/> ns1:lat "-7.76667" ;
+        ns1:long "15.78333" .
+
+    <https://sws.geonames.org/2238832/> ns1:lat "-9.66952" ;
+        ns1:long "15.58926" .
+
+    <https://sws.geonames.org/2239000/> ns1:lat "-7.3163" ;
+        ns1:long "13.40963" .
+
+    <https://sws.geonames.org/2239519/> ns1:lat "-6.3145" ;
+        ns1:long "14.17795" .
+
+    <https://sws.geonames.org/2239732/> ns1:lat "-6.05716" ;
+        ns1:long "15.10971" .
+
+    <https://sws.geonames.org/2239858/> ns1:lat "-9.67548" ;
+        ns1:long "16.82553" .
+
+    <https://sws.geonames.org/2240444/> ns1:lat "-8.91667" ;
+        ns1:long "13.33924" .
+
+    <https://sws.geonames.org/2240449/> ns1:lat "-8.83682" ;
+        ns1:long "13.23432" .
+
+    <https://sws.geonames.org/2241087/> ns1:lat "-5.43333" ;
+        ns1:long "12.21667" .
+
+    <https://sws.geonames.org/2241482/> ns1:lat "-8.46958" ;
+        ns1:long "13.3714" .
+
+    <https://sws.geonames.org/2241634/> ns1:lat "-5.21738" ;
+        ns1:long "13.96639" .
+
+    <https://sws.geonames.org/2241660/> ns1:lat "-8.91136" ;
+        ns1:long "14.8887" .
+
+    <https://sws.geonames.org/2241661/> ns1:lat "-9.34721" ;
+        ns1:long "13.15205" .
+
+    <https://sws.geonames.org/2241664/> ns1:lat "-3.23333" ;
+        ns1:long "17.36667" .
+
+    <https://sws.geonames.org/2241717/> ns1:lat "-6.07746" ;
+        ns1:long "12.42563" .
+
+    <https://sws.geonames.org/2243266/> ns1:lat "-4.93423" ;
+        ns1:long "12.40532" .
+
+    <https://sws.geonames.org/2243267/> ns1:lat "-5.45348" ;
+        ns1:long "12.3731" .
+
+    <https://sws.geonames.org/2243598/> ns1:lat "-8.97504" ;
+        ns1:long "13.82743" .
+
+    <https://sws.geonames.org/2243914/> ns1:lat "-7.86232" ;
+        ns1:long "13.11935" .
+
+    <https://sws.geonames.org/2243924/> ns1:lat "-7.53706" ;
+        ns1:long "15.83843" .
+
+    <https://sws.geonames.org/2255304/> ns1:lat "1.64806" ;
+        ns1:long "14.58056" .
+
+    <https://sws.geonames.org/2255329/> ns1:lat "1.33333" ;
+        ns1:long "15.5" .
+
+    <https://sws.geonames.org/2255330/> ns1:lat "-1.21778" ;
+        ns1:long "16.81917" .
+
+    <https://sws.geonames.org/2255404/> ns1:lat "-3.53333" ;
+        ns1:long "14.83333" .
+
+    <https://sws.geonames.org/2255422/> ns1:lat "-2" ;
+        ns1:long "15.5" .
+
+    <https://sws.geonames.org/2256285/> ns1:lat "1.66667" ;
+        ns1:long "16.05" .
+
+    <https://sws.geonames.org/2257510/> ns1:lat "-4.68306" ;
+        ns1:long "14.53861" .
+
+    <https://sws.geonames.org/2258248/> ns1:lat "-4.11616" ;
+        ns1:long "13.06755" .
+
+    <https://sws.geonames.org/2258400/> ns1:lat "-0.65" ;
+        ns1:long "17.60722" .
+
+    <https://sws.geonames.org/2258727/> ns1:lat "-2.39389" ;
+        ns1:long "14.47833" .
+
+    <https://sws.geonames.org/2258738/> ns1:lat "-4.19577" ;
+        ns1:long "11.99982" .
+
+    <https://sws.geonames.org/2259418/> ns1:lat "-2.46" ;
+        ns1:long "14.9075" .
+
+    <https://sws.geonames.org/2259821/> ns1:lat "-2.41722" ;
+        ns1:long "14.58472" .
+
+    <https://sws.geonames.org/2260399/> ns1:lat "-2.42139" ;
+        ns1:long "14.8025" .
+
+    <https://sws.geonames.org/2260487/> ns1:lat "-0.5" ;
+        ns1:long "16" .
+
+    <https://sws.geonames.org/2260494/> ns1:lat "-1" ;
+        ns1:long "15.5" .
+
+    <https://sws.geonames.org/2260535/> ns1:lat "-4.26613" ;
+        ns1:long "15.28318" .
+
+    <https://sws.geonames.org/2260668/> ns1:lat "-4.1629" ;
+        ns1:long "13.71094" .
+
+    <https://sws.geonames.org/226074/> ns1:lat "1.25" ;
+        ns1:long "32.5" .
+
+    <https://sws.geonames.org/226110/> ns1:lat "0.69299" ;
+        ns1:long "34.18085" .
+
+    <https://sws.geonames.org/2273779/> ns1:lat "6.31667" ;
+        ns1:long "-10.8" .
+
+    <https://sws.geonames.org/2273898/> ns1:lat "5.33333" ;
+        ns1:long "-8.76667" .
+
+    <https://sws.geonames.org/2274275/> ns1:lat "6.75329" ;
+        ns1:long "-11.3671" .
+
+    <https://sws.geonames.org/2274288/> ns1:lat "5.45683" ;
+        ns1:long "-9.58167" .
+
+    <https://sws.geonames.org/2274501/> ns1:lat "4.36888" ;
+        ns1:long "-7.72894" .
+
+    <https://sws.geonames.org/2274688/> ns1:lat "6.81667" ;
+        ns1:long "-8.78333" .
+
+    <https://sws.geonames.org/2274890/> ns1:lat "6.5" ;
+        ns1:long "-10.56667" .
+
+    <https://sws.geonames.org/2274895/> ns1:lat "6.30054" ;
+        ns1:long "-10.7969" .
+
+    <https://sws.geonames.org/2275099/> ns1:lat "4.75" ;
+        ns1:long "-7.75" .
+
+    <https://sws.geonames.org/2275384/> ns1:lat "6.5" ;
+        ns1:long "-9.5" .
+
+    <https://sws.geonames.org/2276086/> ns1:lat "6.53104" ;
+        ns1:long "-10.35368" .
+
+    <https://sws.geonames.org/2276460/> ns1:lat "6.61667" ;
+        ns1:long "-10.78333" .
+
+    <https://sws.geonames.org/2276506/> ns1:lat "6.24683" ;
+        ns1:long "-10.35642" .
+
+    <https://sws.geonames.org/2276600/> ns1:lat "5.01133" ;
+        ns1:long "-9.0388" .
+
+    <https://sws.geonames.org/2276627/> ns1:lat "7.13333" ;
+        ns1:long "-11.05" .
+
+    <https://sws.geonames.org/2276630/> ns1:lat "6.23333" ;
+        ns1:long "-9.83333" .
+
+    <https://sws.geonames.org/2277197/> ns1:lat "7.30222" ;
+        ns1:long "-8.53083" .
+
+    <https://sws.geonames.org/2277374/> ns1:lat "4.42393" ;
+        ns1:long "-7.82183" .
+
+    <https://sws.geonames.org/2277478/> ns1:lat "5.9235" ;
+        ns1:long "-10.07658" .
+
+    <https://sws.geonames.org/2277498/> ns1:lat "6.26363" ;
+        ns1:long "-10.49889" .
+
+    <https://sws.geonames.org/2278048/> ns1:lat "5.45333" ;
+        ns1:long "-9.57444" .
+
+    <https://sws.geonames.org/2278158/> ns1:lat "5.87693" ;
+        ns1:long "-10.04964" .
+
+    <https://sws.geonames.org/2278324/> ns1:lat "6.73333" ;
+        ns1:long "-10.81667" .
+
+    <https://sws.geonames.org/2279264/> ns1:lat "7.19893" ;
+        ns1:long "-8.17315" .
+
+    <https://sws.geonames.org/2280335/> ns1:lat "6.57974" ;
+        ns1:long "-8.41091" .
+
+    <https://sws.geonames.org/2280589/> ns1:lat "10.48115" ;
+        ns1:long "-6.40694" .
+
+    <https://sws.geonames.org/2284647/> ns1:lat "7.41251" ;
+        ns1:long "-7.55383" .
+
+    <https://sws.geonames.org/2286304/> ns1:lat "9.45803" ;
+        ns1:long "-5.62961" .
+
+    <https://sws.geonames.org/2286545/> ns1:lat "8.82245" ;
+        ns1:long "-3.59069" .
+
+    <https://sws.geonames.org/2287514/> ns1:lat "7.59087" ;
+        ns1:long "-7.61571" .
+
+    <https://sws.geonames.org/2287781/> ns1:lat "8" ;
+        ns1:long "-5.5" .
+
+    <https://sws.geonames.org/2288115/> ns1:lat "5.2118" ;
+        ns1:long "-3.73884" .
+
+    <https://sws.geonames.org/2289049/> ns1:lat "9.5928" ;
+        ns1:long "-5.19449" .
+
+    <https://sws.geonames.org/2289065/> ns1:lat "8.23894" ;
+        ns1:long "-7.79945" .
+
+    <https://sws.geonames.org/2289549/> ns1:lat "6.74202" ;
+        ns1:long "-7.34918" .
+
+    <https://sws.geonames.org/2290000/> ns1:lat "9.06757" ;
+        ns1:long "-5.77222" .
+
+    <https://sws.geonames.org/2290462/> ns1:lat "7.25957" ;
+        ns1:long "-8.15498" .
+
+    <https://sws.geonames.org/2290836/> ns1:lat "9.52167" ;
+        ns1:long "-6.48694" .
+
+    <https://sws.geonames.org/2290956/> ns1:lat "7.69385" ;
+        ns1:long "-5.03031" .
+
+    <https://sws.geonames.org/2291136/> ns1:lat "8.0402" ;
+        ns1:long "-2.80003" .
+
+    <https://sws.geonames.org/2292366/> ns1:lat "5.63331" ;
+        ns1:long "-4.87758" .
+
+    <https://sws.geonames.org/229268/> ns1:lat "-0.60467" ;
+        ns1:long "30.64851" .
+
+    <https://sws.geonames.org/2293537/> ns1:lat "5.41667" ;
+        ns1:long "-4.03333" .
+
+    <https://sws.geonames.org/2293538/> ns1:lat "5.35444" ;
+        ns1:long "-4.00167" .
+
+    <https://sws.geonames.org/2294206/> ns1:lat "10.06069" ;
+        ns1:long "-2.50192" .
+
+    <https://sws.geonames.org/2294234/> ns1:lat "6.4" ;
+        ns1:long "0.5" .
+
+    <https://sws.geonames.org/2294237/> ns1:lat "5.77385" ;
+        ns1:long "0.67201" .
+
+    <https://sws.geonames.org/2294547/> ns1:lat "7.48386" ;
+        ns1:long "-2.60497" .
+
+    <https://sws.geonames.org/2294664/> ns1:lat "10.97449" ;
+        ns1:long "-0.47921" .
+
+    <https://sws.geonames.org/2294700/> ns1:lat "5.6698" ;
+        ns1:long "-0.01657" .
+
+    <https://sws.geonames.org/2295458/> ns1:lat "4.92678" ;
+        ns1:long "-1.75773" .
+
+    <https://sws.geonames.org/2295684/> ns1:lat "8.55083" ;
+        ns1:long "-0.51875" .
+
+    <https://sws.geonames.org/2295868/> ns1:lat "5.01345" ;
+        ns1:long "-1.62903" .
+
+    <https://sws.geonames.org/2298890/> ns1:lat "6.68848" ;
+        ns1:long "-1.62443" .
+
+    <https://sws.geonames.org/2300603/> ns1:lat "5.33333" ;
+        ns1:long "-0.75" .
+
+    <https://sws.geonames.org/2300660/> ns1:lat "8.1" ;
+        ns1:long "-1.2" .
+
+    <https://sws.geonames.org/2300776/> ns1:lat "10.5322" ;
+        ns1:long "-0.43783" .
+
+    <https://sws.geonames.org/2301190/> ns1:lat "5.0847" ;
+        ns1:long "-1.35093" .
+
+    <https://sws.geonames.org/2302050/> ns1:lat "4.90279" ;
+        ns1:long "-2.16025" .
+
+    <https://sws.geonames.org/2302657/> ns1:lat "6.5055" ;
+        ns1:long "-1.40891" .
+
+    <https://sws.geonames.org/2302821/> ns1:lat "10.78556" ;
+        ns1:long "-0.85139" .
+
+    <https://sws.geonames.org/2303181/> ns1:lat "5.5" ;
+        ns1:long "4" .
+
+    <https://sws.geonames.org/2303611/> ns1:lat "4.86641" ;
+        ns1:long "-2.24181" .
+
+    <https://sws.geonames.org/2304116/> ns1:lat "6.75" ;
+        ns1:long "-1.5" .
+
+    <https://sws.geonames.org/2305113/> ns1:lat "6.3" ;
+        ns1:long "0.05" .
+
+    <https://sws.geonames.org/2305511/> ns1:lat "6.93375" ;
+        ns1:long "-1.48907" .
+
+    <https://sws.geonames.org/2305677/> ns1:lat "6.11982" ;
+        ns1:long "1.19012" .
+
+    <https://sws.geonames.org/230584/> ns1:lat "1.46083" ;
+        ns1:long "33.93611" .
+
+    <https://sws.geonames.org/2306104/> ns1:lat "5.55602" ;
+        ns1:long "-0.1969" .
+
+    <https://sws.geonames.org/2309096/> ns1:lat "1.7" ;
+        ns1:long "10.5" .
+
+    <https://sws.geonames.org/2309792/> ns1:lat "3.5" ;
+        ns1:long "8.7" .
+
+    <https://sws.geonames.org/2311638/> ns1:lat "0.0767" ;
+        ns1:long "18.28104" .
+
+    <https://sws.geonames.org/2311979/> ns1:lat "-4.41478" ;
+        ns1:long "18.932" .
+
+    <https://sws.geonames.org/2312081/> ns1:lat "-2.42645" ;
+        ns1:long "19.31665" .
+
+    <https://sws.geonames.org/2312723/> ns1:lat "1.89064" ;
+        ns1:long "19.76557" .
+
+    <https://sws.geonames.org/2312888/> ns1:lat "-5.25837" ;
+        ns1:long "14.85838" .
+
+    <https://sws.geonames.org/2312895/> ns1:lat "0.04865" ;
+        ns1:long "18.26034" .
+
+    <https://sws.geonames.org/2312942/> ns1:lat "-4.39973" ;
+        ns1:long "19.57169" .
+
+    <https://sws.geonames.org/2312984/> ns1:lat "-5.89945" ;
+        ns1:long "12.84662" .
+
+    <https://sws.geonames.org/2313002/> ns1:lat "-5.83861" ;
+        ns1:long "13.46306" .
+
+    <https://sws.geonames.org/2313031/> ns1:lat "1.23126" ;
+        ns1:long "19.81054" .
+
+    <https://sws.geonames.org/2313192/> ns1:lat "-2.08465" ;
+        ns1:long "18.3391" .
+
+    <https://sws.geonames.org/2313338/> ns1:lat "0.64402" ;
+        ns1:long "18.383" .
+
+    <https://sws.geonames.org/2313378/> ns1:lat "-2.73089" ;
+        ns1:long "18.15563" .
+
+    <https://sws.geonames.org/2313600/> ns1:lat "1.11181" ;
+        ns1:long "19.39445" .
+
+    <https://sws.geonames.org/2313762/> ns1:lat "3.65332" ;
+        ns1:long "18.63566" .
+
+    <https://sws.geonames.org/2313847/> ns1:lat "-5.03333" ;
+        ns1:long "18.81667" .
+
+    <https://sws.geonames.org/2313864/> ns1:lat "-3.18268" ;
+        ns1:long "16.20003" .
+
+    <https://sws.geonames.org/2314174/> ns1:lat "-4.62314" ;
+        ns1:long "15.09211" .
+
+    <https://sws.geonames.org/2314302/> ns1:lat "-4.32758" ;
+        ns1:long "15.31357" .
+
+    <https://sws.geonames.org/2314336/> ns1:lat "-5.09491" ;
+        ns1:long "15.42288" .
+
+    <https://sws.geonames.org/2314524/> ns1:lat "-5.48557" ;
+        ns1:long "15.30604" .
+
+    <https://sws.geonames.org/2314609/> ns1:lat "-5.2615" ;
+        ns1:long "15.54186" .
+
+    <https://sws.geonames.org/2315389/> ns1:lat "-0.60992" ;
+        ns1:long "17.75614" .
+
+    <https://sws.geonames.org/2315541/> ns1:lat "0.11128" ;
+        ns1:long "18.27359" .
+
+    <https://sws.geonames.org/2315717/> ns1:lat "3.75469" ;
+        ns1:long "18.60552" .
+
+    <https://sws.geonames.org/2316702/> ns1:lat "-5.85098" ;
+        ns1:long "13.05364" .
+
+    <https://sws.geonames.org/2316748/> ns1:lat "-2.158" ;
+        ns1:long "16.23249" .
+
+    <https://sws.geonames.org/2317105/> ns1:lat "4.56409" ;
+        ns1:long "19.93202" .
+
+    <https://sws.geonames.org/2317416/> ns1:lat "-6.01917" ;
+        ns1:long "12.40397" .
+
+    <https://sws.geonames.org/232422/> ns1:lat "0.31628" ;
+        ns1:long "32.58219" .
+
+    <https://sws.geonames.org/2325200/> ns1:lat "7.85367" ;
+        ns1:long "3.93235" .
+
+    <https://sws.geonames.org/2325590/> ns1:lat "7.77104" ;
+        ns1:long "4.55698" .
+
+    <https://sws.geonames.org/2325891/> ns1:lat "4.51388" ;
+        ns1:long "7.53794" .
+
+    <https://sws.geonames.org/2328926/> ns1:lat "10" ;
+        ns1:long "8" .
+
+    <https://sws.geonames.org/2329130/> ns1:lat "4.41939" ;
+        ns1:long "7.02001" .
+
+    <https://sws.geonames.org/233114/> ns1:lat "0.43902" ;
+        ns1:long "33.20317" .
+
+    <https://sws.geonames.org/2332459/> ns1:lat "6.45407" ;
+        ns1:long "3.39467" .
+
+    <https://sws.geonames.org/233508/> ns1:lat "0.05621" ;
+        ns1:long "32.47949" .
+
+    <https://sws.geonames.org/2335949/> ns1:lat "10" ;
+        ns1:long "9.5" .
+
+    <https://sws.geonames.org/2337181/> ns1:lat "7.97022" ;
+        ns1:long "3.59626" .
+
+    <https://sws.geonames.org/2337639/> ns1:lat "8.49664" ;
+        ns1:long "4.54214" .
+
+    <https://sws.geonames.org/2339354/> ns1:lat "7.37756" ;
+        ns1:long "3.90591" .
+
+    <https://sws.geonames.org/2341355/> ns1:lat "7.47734" ;
+        ns1:long "4.35351" .
+
+    <https://sws.geonames.org/2341374/> ns1:lat "7.32275" ;
+        ns1:long "9.00108" .
+
+    <https://sws.geonames.org/2345891/> ns1:lat "5.75" ;
+        ns1:long "8.5" .
+
+    <https://sws.geonames.org/2346202/> ns1:lat "13.12428" ;
+        ns1:long "14.45396" .
+
+    <https://sws.geonames.org/2346229/> ns1:lat "4.95893" ;
+        ns1:long "8.32695" .
+
+    <https://sws.geonames.org/2347209/> ns1:lat "9.08044" ;
+        ns1:long "6.0099" .
+
+    <https://sws.geonames.org/2348773/> ns1:lat "6.21269" ;
+        ns1:long "7.07199" .
+
+    <https://sws.geonames.org/2352379/> ns1:lat "7.62329" ;
+        ns1:long "5.22087" .
+
+    <https://sws.geonames.org/2352947/> ns1:lat "7.15571" ;
+        ns1:long "3.34509" .
+
+    <https://sws.geonames.org/2353100/> ns1:lat "4.98236" ;
+        ns1:long "7.78922" .
+
+    <https://sws.geonames.org/235614/> ns1:lat "28.16667" ;
+        ns1:long "33.45" .
+
+    <https://sws.geonames.org/235826/> ns1:lat "5.03144" ;
+        ns1:long "25.13614" .
+
+    <https://sws.geonames.org/236523/> ns1:lat "4.97307" ;
+        ns1:long "23.93184" .
+
+    <https://sws.geonames.org/2372248/> ns1:lat "12" ;
+        ns1:long "-15" .
+
+    <https://sws.geonames.org/2374876/> ns1:lat "11.25" ;
+        ns1:long "-16.08333" .
+
+    <https://sws.geonames.org/2378953/> ns1:lat "26.33431" ;
+        ns1:long "-6.29146" .
+
+    <https://sws.geonames.org/2383204/> ns1:lat "3.5" ;
+        ns1:long "16.16667" .
+
+    <https://sws.geonames.org/2383523/> ns1:lat "7.24269" ;
+        ns1:long "16.44059" .
+
+    <https://sws.geonames.org/2383698/> ns1:lat "4.36285" ;
+        ns1:long "18.62313" .
+
+    <https://sws.geonames.org/2383827/> ns1:lat "3.52494" ;
+        ns1:long "16.04583" .
+
+    <https://sws.geonames.org/2386243/> ns1:lat "7.08333" ;
+        ns1:long "19.33333" .
+
+    <https://sws.geonames.org/238714/> ns1:lat "5.73948" ;
+        ns1:long "20.05564" .
+
+    <https://sws.geonames.org/2387435/> ns1:lat "4.96075" ;
+        ns1:long "18.7035" .
+
+    <https://sws.geonames.org/2390751/> ns1:lat "7.22097" ;
+        ns1:long "2.38335" .
+
+    <https://sws.geonames.org/2391470/> ns1:lat "9.85856" ;
+        ns1:long "1.49282" .
+
+    <https://sws.geonames.org/2391893/> ns1:lat "8.03424" ;
+        ns1:long "2.4866" .
+
+    <https://sws.geonames.org/2392087/> ns1:lat "6.49646" ;
+        ns1:long "2.60359" .
+
+    <https://sws.geonames.org/2392204/> ns1:lat "9.33716" ;
+        ns1:long "2.63031" .
+
+    <https://sws.geonames.org/2392601/> ns1:lat "10.30416" ;
+        ns1:long "1.37962" .
+
+    <https://sws.geonames.org/2393551/> ns1:lat "7.36332" ;
+        ns1:long "2.59978" .
+
+    <https://sws.geonames.org/2393693/> ns1:lat "11.13417" ;
+        ns1:long "2.93861" .
+
+    <https://sws.geonames.org/2393822/> ns1:lat "6.64873" ;
+        ns1:long "2.73417" .
+
+    <https://sws.geonames.org/2393947/> ns1:lat "6.28036" ;
+        ns1:long "1.82251" .
+
+    <https://sws.geonames.org/2394227/> ns1:lat "6.46441" ;
+        ns1:long "2.39288" .
+
+    <https://sws.geonames.org/2394819/> ns1:lat "6.36536" ;
+        ns1:long "2.41833" .
+
+    <https://sws.geonames.org/2394992/> ns1:lat "9.75" ;
+        ns1:long "2.75" .
+
+    <https://sws.geonames.org/2395170/> ns1:lat "9.5" ;
+        ns1:long "2.25" .
+
+    <https://sws.geonames.org/2395317/> ns1:lat "11.29845" ;
+        ns1:long "2.43856" .
+
+    <https://sws.geonames.org/2395510/> ns1:lat "6.5808" ;
+        ns1:long "1.6696" .
+
+    <https://sws.geonames.org/239552/> ns1:lat "6.04628" ;
+        ns1:long "25.32607" .
+
+    <https://sws.geonames.org/2395524/> ns1:lat "10.75" ;
+        ns1:long "1.66667" .
+
+    <https://sws.geonames.org/2395870/> ns1:lat "6.53445" ;
+        ns1:long "2.66833" .
+
+    <https://sws.geonames.org/2395915/> ns1:lat "7.18286" ;
+        ns1:long "1.99119" .
+
+    <https://sws.geonames.org/2396076/> ns1:lat "1.5" ;
+        ns1:long "12" .
+
+    <https://sws.geonames.org/2396518/> ns1:lat "-0.71933" ;
+        ns1:long "8.78151" .
+
+    <https://sws.geonames.org/2396646/> ns1:lat "1.5995" ;
+        ns1:long "11.57933" .
+
+    <https://sws.geonames.org/2396924/> ns1:lat "-1.58333" ;
+        ns1:long "9.58333" .
+
+    <https://sws.geonames.org/2396926/> ns1:lat "0.66667" ;
+        ns1:long "12.83333" .
+
+    <https://sws.geonames.org/2396927/> ns1:lat "-0.81667" ;
+        ns1:long "9" .
+
+    <https://sws.geonames.org/2397842/> ns1:lat "-0.41667" ;
+        ns1:long "10.58333" .
+
+    <https://sws.geonames.org/239880/> ns1:lat "7" ;
+        ns1:long "21" .
+
+    <https://sws.geonames.org/2399886/> ns1:lat "-1.20961" ;
+        ns1:long "12.48229" .
+
+    <https://sws.geonames.org/2400454/> ns1:lat "-1.3" ;
+        ns1:long "13.9" .
+
+    <https://sws.geonames.org/2400553/> ns1:lat "-1" ;
+        ns1:long "11.75" .
+
+    <https://sws.geonames.org/2400682/> ns1:lat "0.3" ;
+        ns1:long "10.03333" .
+
+    <https://sws.geonames.org/2401146/> ns1:lat "0.76357" ;
+        ns1:long "12.96616" .
+
+    <https://sws.geonames.org/240448/> ns1:lat "4.41667" ;
+        ns1:long "21" .
+
+    <https://sws.geonames.org/240497/> ns1:lat "4.83895" ;
+        ns1:long "23.11739" .
+
+    <https://sws.geonames.org/2410758/> ns1:lat "1" ;
+        ns1:long "7" .
+
+    <https://sws.geonames.org/2410763/> ns1:lat "0.33756" ;
+        ns1:long "6.7299" .
+
+    <https://sws.geonames.org/241170/> ns1:lat "-4.58333" ;
+        ns1:long "55.66667" .
+
+    <https://sws.geonames.org/2415239/> ns1:lat "8.285" ;
+        ns1:long "-9.465" .
+
+    <https://sws.geonames.org/2416966/> ns1:lat "7.67389" ;
+        ns1:long "-8.31722" .
+
+    <https://sws.geonames.org/2417988/> ns1:lat "8.54351" ;
+        ns1:long "-9.47099" .
+
+    <https://sws.geonames.org/2418362/> ns1:lat "11.31823" ;
+        ns1:long "-12.28332" .
+
+    <https://sws.geonames.org/2419472/> ns1:lat "9.1848" ;
+        ns1:long "-10.09987" .
+
+    <https://sws.geonames.org/2420477/> ns1:lat "10.83333" ;
+        ns1:long "-10.66667" .
+
+    <https://sws.geonames.org/2421533/> ns1:lat "10.25" ;
+        ns1:long "-13.41667" .
+
+    <https://sws.geonames.org/242246/> ns1:lat "13.5" ;
+        ns1:long "21.25" .
+
+    <https://sws.geonames.org/2422464/> ns1:lat "9.60703" ;
+        ns1:long "-13.597" .
+
+    <https://sws.geonames.org/2422465/> ns1:lat "9.53795" ;
+        ns1:long "-13.67729" .
+
+    <https://sws.geonames.org/242247/> ns1:lat "13" ;
+        ns1:long "21" .
+
+    <https://sws.geonames.org/2422481/> ns1:lat "4.36228" ;
+        ns1:long "-7.52601" .
+
+    <https://sws.geonames.org/2423334/> ns1:lat "10" ;
+        ns1:long "-14" .
+
+    <https://sws.geonames.org/2424855/> ns1:lat "21.5" ;
+        ns1:long "17.5" .
+
+    <https://sws.geonames.org/2425287/> ns1:lat "9.5" ;
+        ns1:long "16.5" .
+
+    <https://sws.geonames.org/2425791/> ns1:lat "9.14555" ;
+        ns1:long "18.38331" .
+
+    <https://sws.geonames.org/2428132/> ns1:lat "10" ;
+        ns1:long "15.83" .
+
+    <https://sws.geonames.org/2429062/> ns1:lat "11.55848" ;
+        ns1:long "15.14775" .
+
+    <https://sws.geonames.org/2429296/> ns1:lat "9.3972" ;
+        ns1:long "16.30066" .
+
+    <https://sws.geonames.org/2434478/> ns1:lat "11.34" ;
+        ns1:long "16.25" .
+
+    <https://sws.geonames.org/2434508/> ns1:lat "15" ;
+        ns1:long "19" .
+
+    <https://sws.geonames.org/2434910/> ns1:lat "10.28088" ;
+        ns1:long "15.37425" .
+
+    <https://sws.geonames.org/2435235/> ns1:lat "9.9692" ;
+        ns1:long "14.4676" .
+
+    <https://sws.geonames.org/2450221/> ns1:lat "22.59606" ;
+        ns1:long "-1.8944" .
+
+    <https://sws.geonames.org/245785/> ns1:lat "13.82916" ;
+        ns1:long "20.8324" .
+
+    <https://sws.geonames.org/2463810/> ns1:lat "33.54445" ;
+        ns1:long "9.97157" .
+
+    <https://sws.geonames.org/2464038/> ns1:lat "36.33333" ;
+        ns1:long "10" .
+
+    <https://sws.geonames.org/2464041/> ns1:lat "36.40291" ;
+        ns1:long "10.14292" .
+
+    <https://sws.geonames.org/2464205/> ns1:lat "37.05224" ;
+        ns1:long "10.05838" .
+
+    <https://sws.geonames.org/2464461/> ns1:lat "34" ;
+        ns1:long "9" .
+
+    <https://sws.geonames.org/2464464/> ns1:lat "36.78633" ;
+        ns1:long "10.18484" .
+
+    <https://sws.geonames.org/2464466/> ns1:lat "37.06947" ;
+        ns1:long "10.49645" .
+
+    <https://sws.geonames.org/2464468/> ns1:lat "36.81574" ;
+        ns1:long "10.24979" .
+
+    <https://sws.geonames.org/2464470/> ns1:lat "36.81897" ;
+        ns1:long "10.16579" .
+
+    <https://sws.geonames.org/2464554/> ns1:lat "37.08856" ;
+        ns1:long "11.03477" .
+
+    <https://sws.geonames.org/2464648/> ns1:lat "33.91968" ;
+        ns1:long "8.13352" .
+
+    <https://sws.geonames.org/2464698/> ns1:lat "32" ;
+        ns1:long "10" .
+
+    <https://sws.geonames.org/2464701/> ns1:lat "32.92967" ;
+        ns1:long "10.45177" .
+
+    <https://sws.geonames.org/2464912/> ns1:lat "35.91667" ;
+        ns1:long "10.41667" .
+
+    <https://sws.geonames.org/2464915/> ns1:lat "35.82539" ;
+        ns1:long "10.63699" .
+
+    <https://sws.geonames.org/2464979/> ns1:lat "35.23151" ;
+        ns1:long "9.12321" .
+
+    <https://sws.geonames.org/2465027/> ns1:lat "36" ;
+        ns1:long "9.33333" .
+
+    <https://sws.geonames.org/2465058/> ns1:lat "37.06972" ;
+        ns1:long "9.18417" .
+
+    <https://sws.geonames.org/2465837/> ns1:lat "34.83333" ;
+        ns1:long "9.5" .
+
+    <https://sws.geonames.org/2465840/> ns1:lat "35.03823" ;
+        ns1:long "9.48494" .
+
+    <https://sws.geonames.org/2466688/> ns1:lat "36.8687" ;
+        ns1:long "10.34174" .
+
+    <https://sws.geonames.org/2467368/> ns1:lat "37.05722" ;
+        ns1:long "9.23806" .
+
+    <https://sws.geonames.org/2467450/> ns1:lat "34.75" ;
+        ns1:long "10.41667" .
+
+    <https://sws.geonames.org/2467454/> ns1:lat "34.74056" ;
+        ns1:long "10.76028" .
+
+    <https://sws.geonames.org/2467815/> ns1:lat "36.76946" ;
+        ns1:long "10.27468" .
+
+    <https://sws.geonames.org/2468014/> ns1:lat "33.5" ;
+        ns1:long "8.83333" .
+
+    <https://sws.geonames.org/2468018/> ns1:lat "33.70439" ;
+        ns1:long "8.96903" .
+
+    <https://sws.geonames.org/2468244/> ns1:lat "36.86667" ;
+        ns1:long "10.33333" .
+
+    <https://sws.geonames.org/2468249/> ns1:lat "34.71553" ;
+        ns1:long "11.1904" .
+
+    <https://sws.geonames.org/2468307/> ns1:lat "36.91353" ;
+        ns1:long "10.31651" .
+
+    <https://sws.geonames.org/2468351/> ns1:lat "34.5" ;
+        ns1:long "9" .
+
+    <https://sws.geonames.org/2468353/> ns1:lat "34.425" ;
+        ns1:long "8.78417" .
+
+    <https://sws.geonames.org/2468365/> ns1:lat "33.83333" ;
+        ns1:long "9.75" .
+
+    <https://sws.geonames.org/2468369/> ns1:lat "33.88146" ;
+        ns1:long "10.0982" .
+
+    <https://sws.geonames.org/2468561/> ns1:lat "33.87309" ;
+        ns1:long "7.87765" .
+
+    <https://sws.geonames.org/2468576/> ns1:lat "36.66667" ;
+        ns1:long "10.66667" .
+
+    <https://sws.geonames.org/2468579/> ns1:lat "36.45606" ;
+        ns1:long "10.73763" .
+
+    <https://sws.geonames.org/2469341/> ns1:lat "35.85798" ;
+        ns1:long "9.20072" .
+
+    <https://sws.geonames.org/2469386/> ns1:lat "36.64964" ;
+        ns1:long "9.61231" .
+
+    <https://sws.geonames.org/2469470/> ns1:lat "33.33333" ;
+        ns1:long "11" .
+
+    <https://sws.geonames.org/2469473/> ns1:lat "33.35495" ;
+        ns1:long "10.50548" .
+
+    <https://sws.geonames.org/2469794/> ns1:lat "36.82955" ;
+        ns1:long "10.31513" .
+
+    <https://sws.geonames.org/2470085/> ns1:lat "36.66667" ;
+        ns1:long "8.75" .
+
+    <https://sws.geonames.org/2470173/> ns1:lat "33.50398" ;
+        ns1:long "11.11215" .
+
+    <https://sws.geonames.org/2470175/> ns1:lat "33.74826" ;
+        ns1:long "8.2295" .
+
+    <https://sws.geonames.org/2470181/> ns1:lat "33.8" ;
+        ns1:long "10.9" .
+
+    <https://sws.geonames.org/2470384/> ns1:lat "33.87576" ;
+        ns1:long "10.85745" .
+
+    <https://sws.geonames.org/2470588/> ns1:lat "36.72866" ;
+        ns1:long "10.34163" .
+
+    <https://sws.geonames.org/2470789/> ns1:lat "35.56626" ;
+        ns1:long "8.44412" .
+
+    <https://sws.geonames.org/2471287/> ns1:lat "33.46632" ;
+        ns1:long "9.0203" .
+
+    <https://sws.geonames.org/2472439/> ns1:lat "36.75444" ;
+        ns1:long "8.75139" .
+
+    <https://sws.geonames.org/2472477/> ns1:lat "36.72127" ;
+        ns1:long "10.32303" .
+
+    <https://sws.geonames.org/2472699/> ns1:lat "37.08333" ;
+        ns1:long "9.58333" .
+
+    <https://sws.geonames.org/2472706/> ns1:lat "37.27442" ;
+        ns1:long "9.87391" .
+
+    <https://sws.geonames.org/2472770/> ns1:lat "36.66667" ;
+        ns1:long "9.25" .
+
+    <https://sws.geonames.org/2472913/> ns1:lat "36.77873" ;
+        ns1:long "8.68735" .
+
+    <https://sws.geonames.org/2473245/> ns1:lat "36.98333" ;
+        ns1:long "10.11667" .
+
+    <https://sws.geonames.org/2473247/> ns1:lat "36.86012" ;
+        ns1:long "10.19337" .
+
+    <https://sws.geonames.org/2473434/> ns1:lat "32.11892" ;
+        ns1:long "9.54138" .
+
+    <https://sws.geonames.org/2473449/> ns1:lat "35.6781" ;
+        ns1:long "10.09633" .
+
+    <https://sws.geonames.org/2473451/> ns1:lat "35.58333" ;
+        ns1:long "9.83333" .
+
+    <https://sws.geonames.org/2473457/> ns1:lat "35.16758" ;
+        ns1:long "8.83651" .
+
+    <https://sws.geonames.org/2473460/> ns1:lat "35.25" ;
+        ns1:long "8.78333" .
+
+    <https://sws.geonames.org/2473474/> ns1:lat "33.68135" ;
+        ns1:long "10.91685" .
+
+    <https://sws.geonames.org/2473493/> ns1:lat "35.77799" ;
+        ns1:long "10.82617" .
+
+    <https://sws.geonames.org/2473495/> ns1:lat "35.61667" ;
+        ns1:long "10.75" .
+
+    <https://sws.geonames.org/2473517/> ns1:lat "34.32081" ;
+        ns1:long "8.40157" .
+
+    <https://sws.geonames.org/2473535/> ns1:lat "33.37123" ;
+        ns1:long "10.43782" .
+
+    <https://sws.geonames.org/2473572/> ns1:lat "35.50472" ;
+        ns1:long "11.06222" .
+
+    <https://sws.geonames.org/2473574/> ns1:lat "35.33333" ;
+        ns1:long "10.58333" .
+
+    <https://sws.geonames.org/2473634/> ns1:lat "36.17424" ;
+        ns1:long "8.70486" .
+
+    <https://sws.geonames.org/2473637/> ns1:lat "36.08333" ;
+        ns1:long "8.75" .
+
+    <https://sws.geonames.org/2473639/> ns1:lat "36.83111" ;
+        ns1:long "9.92417" .
+
+    <https://sws.geonames.org/2473654/> ns1:lat "35.3" ;
+        ns1:long "10.71667" .
+
+    <https://sws.geonames.org/2473744/> ns1:lat "36.4" ;
+        ns1:long "10.61667" .
+
+    <https://sws.geonames.org/2474034/> ns1:lat "32.8565" ;
+        ns1:long "10.28885" .
+
+    <https://sws.geonames.org/2475475/> ns1:lat "33.11083" ;
+        ns1:long "6.07" .
+
+    <https://sws.geonames.org/2475683/> ns1:lat "34.66667" ;
+        ns1:long "-1.41667" .
+
+    <https://sws.geonames.org/2475687/> ns1:lat "34.87833" ;
+        ns1:long "-1.315" .
+
+    <https://sws.geonames.org/2475744/> ns1:lat "36.71182" ;
+        ns1:long "4.04591" .
+
+    <https://sws.geonames.org/2475858/> ns1:lat "35.75" ;
+        ns1:long "1.75" .
+
+    <https://sws.geonames.org/2476032/> ns1:lat "32.77111" ;
+        ns1:long "-0.41407" .
+
+    <https://sws.geonames.org/2476301/> ns1:lat "27.67111" ;
+        ns1:long "-8.14743" .
+
+    <https://sws.geonames.org/2476403/> ns1:lat "29.26417" ;
+        ns1:long "0.23583" .
+
+    <https://sws.geonames.org/2476819/> ns1:lat "27" ;
+        ns1:long "1.5" .
+
+    <https://sws.geonames.org/2476893/> ns1:lat "34.91667" ;
+        ns1:long "1.58333" .
+
+    <https://sws.geonames.org/2477457/> ns1:lat "35" ;
+        ns1:long "7.83333" .
+
+    <https://sws.geonames.org/2477461/> ns1:lat "35.40417" ;
+        ns1:long "8.12417" .
+
+    <https://sws.geonames.org/2478216/> ns1:lat "22.785" ;
+        ns1:long "5.52278" .
+
+    <https://sws.geonames.org/2478217/> ns1:lat "23.55" ;
+        ns1:long "5.18333" .
+
+    <https://sws.geonames.org/2478801/> ns1:lat "20.93333" ;
+        ns1:long "10.2" .
+
+    <https://sws.geonames.org/2479269/> ns1:lat "33.41667" ;
+        ns1:long "6.83333" .
+
+    <https://sws.geonames.org/2482965/> ns1:lat "36.54857" ;
+        ns1:long "7.22861" .
+
+    <https://sws.geonames.org/2483161/> ns1:lat "35.05876" ;
+        ns1:long "6.17" .
+
+    <https://sws.geonames.org/2483761/> ns1:lat "26.71576" ;
+        ns1:long "0.1714" .
+
+    <https://sws.geonames.org/2483995/> ns1:lat "29.18683" ;
+        ns1:long "-2.72929" .
+
+    <https://sws.geonames.org/2485794/> ns1:lat "30.68333" ;
+        ns1:long "5.26667" .
+
+    <https://sws.geonames.org/2485801/> ns1:lat "31.94932" ;
+        ns1:long "5.32502" .
+
+    <https://sws.geonames.org/2485926/> ns1:lat "35.69906" ;
+        ns1:long "-0.63588" .
+
+    <https://sws.geonames.org/2486512/> ns1:lat "33.5" ;
+        ns1:long "-0.83333" .
+
+    <https://sws.geonames.org/2486601/> ns1:lat "32.58333" ;
+        ns1:long "3.33333" .
+
+    <https://sws.geonames.org/2486682/> ns1:lat "35.28333" ;
+        ns1:long "4.25" .
+
+    <https://sws.geonames.org/2486827/> ns1:lat "25.22508" ;
+        ns1:long "4.14751" .
+
+    <https://sws.geonames.org/2488831/> ns1:lat "36.08333" ;
+        ns1:long "3" .
+
+    <https://sws.geonames.org/2490098/> ns1:lat "35.39664" ;
+        ns1:long "0.14027" .
+
+    <https://sws.geonames.org/2491191/> ns1:lat "33.8" ;
+        ns1:long "2.86514" .
+
+    <https://sws.geonames.org/2491323/> ns1:lat "35.88889" ;
+        ns1:long "2.74905" .
+
+    <https://sws.geonames.org/2491335/> ns1:lat "35.21222" ;
+        ns1:long "2.31889" .
+
+    <https://sws.geonames.org/2491362/> ns1:lat "36.58333" ;
+        ns1:long "8.41667" .
+
+    <https://sws.geonames.org/2491908/> ns1:lat "35.66864" ;
+        ns1:long "1.96491" .
+
+    <https://sws.geonames.org/2492889/> ns1:lat "36.25" ;
+        ns1:long "5" .
+
+    <https://sws.geonames.org/2495662/> ns1:lat "36.46214" ;
+        ns1:long "7.42608" .
+
+    <https://sws.geonames.org/2495856/> ns1:lat "30.33333" ;
+        ns1:long "0" .
+
+    <https://sws.geonames.org/2495857/> ns1:lat "36.75" ;
+        ns1:long "4" .
+
+    <https://sws.geonames.org/2496049/> ns1:lat "32.49094" ;
+        ns1:long "3.67347" .
+
+    <https://sws.geonames.org/2497411/> ns1:lat "33.35608" ;
+        ns1:long "6.86319" .
+
+    <https://sws.geonames.org/2497509/> ns1:lat "36.75472" ;
+        ns1:long "6.2725" .
+
+    <https://sws.geonames.org/2499912/> ns1:lat "36.31351" ;
+        ns1:long "5.73631" .
+
+    <https://sws.geonames.org/2499933/> ns1:lat "29.56155" ;
+        ns1:long "-2.15248" .
+
+    <https://sws.geonames.org/2500017/> ns1:lat "34.67279" ;
+        ns1:long "3.263" .
+
+    <https://sws.geonames.org/2501152/> ns1:lat "36.365" ;
+        ns1:long "6.61472" .
+
+    <https://sws.geonames.org/2502385/> ns1:lat "35.20855" ;
+        ns1:long "4.17402" .
+
+    <https://sws.geonames.org/2502958/> ns1:lat "36.37489" ;
+        ns1:long "3.902" .
+
+    <https://sws.geonames.org/2503633/> ns1:lat "28.12024" ;
+        ns1:long "6.81856" .
+
+    <https://sws.geonames.org/2503765/> ns1:lat "36.58333" ;
+        ns1:long "3" .
+
+    <https://sws.geonames.org/2503769/> ns1:lat "36.47004" ;
+        ns1:long "2.8277" .
+
+    <https://sws.geonames.org/2503826/> ns1:lat "34.85038" ;
+        ns1:long "5.72805" .
+
+    <https://sws.geonames.org/2504581/> ns1:lat "35.30099" ;
+        ns1:long "-1.38226" .
+
+    <https://sws.geonames.org/2504755/> ns1:lat "30.13306" ;
+        ns1:long "-2.16611" .
+
+    <https://sws.geonames.org/2505525/> ns1:lat "31.65632" ;
+        ns1:long "-2.36701" .
+
+    <https://sws.geonames.org/2505572/> ns1:lat "35.55597" ;
+        ns1:long "6.17414" .
+
+    <https://sws.geonames.org/2506085/> ns1:lat "35.23333" ;
+        ns1:long "6.16667" .
+
+    <https://sws.geonames.org/2506700/> ns1:lat "25.29263" ;
+        ns1:long "3.74815" .
+
+    <https://sws.geonames.org/2506994/> ns1:lat "36.83333" ;
+        ns1:long "7.58333" .
+
+    <https://sws.geonames.org/2506999/> ns1:lat "36.9" ;
+        ns1:long "7.76667" .
+
+    <https://sws.geonames.org/2507480/> ns1:lat "36.73225" ;
+        ns1:long "3.08746" .
+
+    <https://sws.geonames.org/2507899/> ns1:lat "35.33333" ;
+        ns1:long "-1.08333" .
+
+    <https://sws.geonames.org/2508584/> ns1:lat "23.16667" ;
+        ns1:long "5.83333" .
+
+    <https://sws.geonames.org/2508807/> ns1:lat "26.73333" ;
+        ns1:long "-0.91667" .
+
+    <https://sws.geonames.org/2508813/> ns1:lat "27.87429" ;
+        ns1:long "-0.29388" .
+
+    <https://sws.geonames.org/2508826/> ns1:lat "24.22244" ;
+        ns1:long "9.24225" .
+
+    <https://sws.geonames.org/2510529/> ns1:lat "28.32977" ;
+        ns1:long "-16.5097" .
+
+    <https://sws.geonames.org/2511173/> ns1:lat "28.16667" ;
+        ns1:long "-17.33333" .
+
+    <https://sws.geonames.org/2511174/> ns1:lat "28.46824" ;
+        ns1:long "-16.25462" .
+
+    <https://sws.geonames.org/2515270/> ns1:lat "28.09973" ;
+        ns1:long "-15.41343" .
+
+    <https://sws.geonames.org/2515271/> ns1:lat "28.42039" ;
+        ns1:long "-14.01306" .
+
+    <https://sws.geonames.org/2515680/> ns1:lat "28.69503" ;
+        ns1:long "-17.85287" .
+
+    <https://sws.geonames.org/2515692/> ns1:lat "28.39076" ;
+        ns1:long "-16.52309" .
+
+    <https://sws.geonames.org/2515699/> ns1:lat "29.01" ;
+        ns1:long "-13.641" .
+
+    <https://sws.geonames.org/2517107/> ns1:lat "27.97257" ;
+        ns1:long "-15.58685" .
+
+    <https://sws.geonames.org/2520308/> ns1:lat "28" ;
+        ns1:long "-15.5" .
+
+    <https://sws.geonames.org/2526452/> ns1:lat "30.33241" ;
+        ns1:long "-5.8384" .
+
+    <https://sws.geonames.org/2526780/> ns1:lat "34.47857" ;
+        ns1:long "-1.7685" .
+
+    <https://sws.geonames.org/2526924/> ns1:lat "31.53501" ;
+        ns1:long "-7.49291" .
+
+    <https://sws.geonames.org/2527089/> ns1:lat "29.69742" ;
+        ns1:long "-9.73162" .
+
+    <https://sws.geonames.org/2527366/> ns1:lat "34.28791" ;
+        ns1:long "-4.66372" .
+
+    <https://sws.geonames.org/2527915/> ns1:lat "31.51472" ;
+        ns1:long "-5.53278" .
+
+    <https://sws.geonames.org/2527925/> ns1:lat "31.50764" ;
+        ns1:long "-5.03293" .
+
+    <https://sws.geonames.org/2528103/> ns1:lat "33.23654" ;
+        ns1:long "-5.05954" .
+
+    <https://sws.geonames.org/2528659/> ns1:lat "33.89469" ;
+        ns1:long "-6.30649" .
+
+    <https://sws.geonames.org/2528910/> ns1:lat "35.57845" ;
+        ns1:long "-5.36837" .
+
+    <https://sws.geonames.org/2528914/> ns1:lat "30.86464" ;
+        ns1:long "-8.37795" .
+
+    <https://sws.geonames.org/2529019/> ns1:lat "31.28925" ;
+        ns1:long "-7.23789" .
+
+    <https://sws.geonames.org/2529101/> ns1:lat "30.77788" ;
+        ns1:long "-5.56" .
+
+    <https://sws.geonames.org/2529317/> ns1:lat "34.21" ;
+        ns1:long "-4.01" .
+
+    <https://sws.geonames.org/2529362/> ns1:lat "29.74409" ;
+        ns1:long "-7.973" .
+
+    <https://sws.geonames.org/2529649/> ns1:lat "30.47028" ;
+        ns1:long "-8.87695" .
+
+    <https://sws.geonames.org/2529863/> ns1:lat "29.61589" ;
+        ns1:long "-8.86243" .
+
+    <https://sws.geonames.org/2530048/> ns1:lat "34.40731" ;
+        ns1:long "-2.89732" .
+
+    <https://sws.geonames.org/2530066/> ns1:lat "30.91969" ;
+        ns1:long "-6.89875" .
+
+    <https://sws.geonames.org/2530241/> ns1:lat "28.43799" ;
+        ns1:long "-11.10321" .
+
+    <https://sws.geonames.org/2530335/> ns1:lat "35.76727" ;
+        ns1:long "-5.79975" .
+
+    <https://sws.geonames.org/2530593/> ns1:lat "30.26" ;
+        ns1:long "-5.66" .
+
+    <https://sws.geonames.org/2531023/> ns1:lat "33.02478" ;
+        ns1:long "-4.87285" .
+
+    <https://sws.geonames.org/2531432/> ns1:lat "31.35236" ;
+        ns1:long "-7.95012" .
+
+    <https://sws.geonames.org/2531480/> ns1:lat "34.04965" ;
+        ns1:long "-4.42162" .
+
+    <https://sws.geonames.org/2531635/> ns1:lat "29.97" ;
+        ns1:long "-5.58" .
+
+    <https://sws.geonames.org/2531876/> ns1:lat "30.20233" ;
+        ns1:long "-9.11471" .
+
+    <https://sws.geonames.org/2531911/> ns1:lat "32.38525" ;
+        ns1:long "-4.49623" .
+
+    <https://sws.geonames.org/2532346/> ns1:lat "32.7617" ;
+        ns1:long "-5.8092" .
+
+    <https://sws.geonames.org/2532381/> ns1:lat "35.79206" ;
+        ns1:long "-5.92475" .
+
+    <https://sws.geonames.org/2532383/> ns1:lat "30.36373" ;
+        ns1:long "-9.60557" .
+
+    <https://sws.geonames.org/2532394/> ns1:lat "34.68664" ;
+        ns1:long "-6.00272" .
+
+    <https://sws.geonames.org/2532628/> ns1:lat "31.06262" ;
+        ns1:long "-6.5525" .
+
+    <https://sws.geonames.org/2532669/> ns1:lat "30.70405" ;
+        ns1:long "-7.62226" .
+
+    <https://sws.geonames.org/2534515/> ns1:lat "29.37975" ;
+        ns1:long "-10.17299" .
+
+    <https://sws.geonames.org/2534572/> ns1:lat "34.02733" ;
+        ns1:long "-4.88343" .
+
+    <https://sws.geonames.org/2537716/> ns1:lat "30.87281" ;
+        ns1:long "-6.23318" .
+
+    <https://sws.geonames.org/2537763/> ns1:lat "34.0531" ;
+        ns1:long "-6.79846" .
+
+    <https://sws.geonames.org/2537881/> ns1:lat "32.29939" ;
+        ns1:long "-9.23718" .
+
+    <https://sws.geonames.org/2538027/> ns1:lat "31.28318" ;
+        ns1:long "-4.26565" .
+
+    <https://sws.geonames.org/2538470/> ns1:lat "33.75" ;
+        ns1:long "-6.33333" .
+
+    <https://sws.geonames.org/2538475/> ns1:lat "34.01325" ;
+        ns1:long "-6.83255" .
+
+    <https://sws.geonames.org/2538832/> ns1:lat "33.31891" ;
+        ns1:long "-8.33749" .
+
+    <https://sws.geonames.org/2540483/> ns1:lat "34.68139" ;
+        ns1:long "-1.90858" .
+
+    <https://sws.geonames.org/2540810/> ns1:lat "34.79584" ;
+        ns1:long "-5.57849" .
+
+    <https://sws.geonames.org/2540850/> ns1:lat "30.91894" ;
+        ns1:long "-6.89341" .
+
+    <https://sws.geonames.org/2541479/> ns1:lat "35.16813" ;
+        ns1:long "-2.93352" .
+
+    <https://sws.geonames.org/2541692/> ns1:lat "33.5" ;
+        ns1:long "-4.5" .
+
+    <https://sws.geonames.org/2541805/> ns1:lat "34.05555" ;
+        ns1:long "-5.52132" .
+
+    <https://sws.geonames.org/2542007/> ns1:lat "28.5" ;
+        ns1:long "-10" .
+
+    <https://sws.geonames.org/2542227/> ns1:lat "32.6852" ;
+        ns1:long "-4.74512" .
+
+    <https://sws.geonames.org/2542414/> ns1:lat "33.72395" ;
+        ns1:long "-3.53263" .
+
+    <https://sws.geonames.org/2542715/> ns1:lat "33.89352" ;
+        ns1:long "-5.54727" .
+
+    <https://sws.geonames.org/2542995/> ns1:lat "31.5" ;
+        ns1:long "-8.33333" .
+
+    <https://sws.geonames.org/2542997/> ns1:lat "31.63416" ;
+        ns1:long "-7.99994" .
+
+    <https://sws.geonames.org/2543440/> ns1:lat "35.20217" ;
+        ns1:long "-6.15125" .
+
+    <https://sws.geonames.org/2543549/> ns1:lat "35.19321" ;
+        ns1:long "-6.15572" .
+
+    <https://sws.geonames.org/2544001/> ns1:lat "35.00044" ;
+        ns1:long "-5.90378" .
+
+    <https://sws.geonames.org/2544248/> ns1:lat "32.88108" ;
+        ns1:long "-6.9063" .
+
+    <https://sws.geonames.org/2544333/> ns1:lat "32.93492" ;
+        ns1:long "-5.66167" .
+
+    <https://sws.geonames.org/2545786/> ns1:lat "31.29164" ;
+        ns1:long "-5.509" .
+
+    <https://sws.geonames.org/2545798/> ns1:lat "29.46207" ;
+        ns1:long "-9.67275" .
+
+    <https://sws.geonames.org/2546904/> ns1:lat "29.21377" ;
+        ns1:long "-9.48807" .
+
+    <https://sws.geonames.org/2546917/> ns1:lat "33.52666" ;
+        ns1:long "-5.11019" .
+
+    <https://sws.geonames.org/2547766/> ns1:lat "31.43" ;
+        ns1:long "-6.94" .
+
+    <https://sws.geonames.org/2548135/> ns1:lat "29.25" ;
+        ns1:long "-6.41" .
+
+    <https://sws.geonames.org/2548623/> ns1:lat "31.69227" ;
+        ns1:long "-4.95256" .
+
+    <https://sws.geonames.org/2548885/> ns1:lat "34.03313" ;
+        ns1:long "-5.00028" .
+
+    <https://sws.geonames.org/2548894/> ns1:lat "31.48479" ;
+        ns1:long "-5.03648" .
+
+    <https://sws.geonames.org/2549263/> ns1:lat "31.5125" ;
+        ns1:long "-9.77" .
+
+    <https://sws.geonames.org/2549315/> ns1:lat "35" ;
+        ns1:long "-4" .
+
+    <https://sws.geonames.org/2549356/> ns1:lat "31.4353" ;
+        ns1:long "-4.23258" .
+
+    <https://sws.geonames.org/2549851/> ns1:lat "31.49454" ;
+        ns1:long "-5.07797" .
+
+    <https://sws.geonames.org/2549976/> ns1:lat "31.45605" ;
+        ns1:long "-8.47663" .
+
+    <https://sws.geonames.org/2550252/> ns1:lat "33.68786" ;
+        ns1:long "-5.371" .
+
+    <https://sws.geonames.org/2551028/> ns1:lat "28.68169" ;
+        ns1:long "-11.1204" .
+
+    <https://sws.geonames.org/2553132/> ns1:lat "30.96937" ;
+        ns1:long "-6.70382" .
+
+    <https://sws.geonames.org/2553303/> ns1:lat "31.54351" ;
+        ns1:long "-8.76275" .
+
+    <https://sws.geonames.org/2553455/> ns1:lat "35.16878" ;
+        ns1:long "-5.2636" .
+
+    <https://sws.geonames.org/2553603/> ns1:lat "33.53333" ;
+        ns1:long "-7.58333" .
+
+    <https://sws.geonames.org/2553604/> ns1:lat "33.58831" ;
+        ns1:long "-7.61138" .
+
+    <https://sws.geonames.org/2554389/> ns1:lat "33.36376" ;
+        ns1:long "-4.72896" .
+
+    <https://sws.geonames.org/2555103/> ns1:lat "30.52131" ;
+        ns1:long "-6.90993" .
+
+    <https://sws.geonames.org/2555395/> ns1:lat "33.85194" ;
+        ns1:long "-4.87228" .
+
+    <https://sws.geonames.org/2556299/> ns1:lat "28.96005" ;
+        ns1:long "-9.00161" .
+
+    <https://sws.geonames.org/2556464/> ns1:lat "33.43443" ;
+        ns1:long "-5.22126" .
+
+    <https://sws.geonames.org/2556657/> ns1:lat "33.28952" ;
+        ns1:long "-8.3425" .
+
+    <https://sws.geonames.org/2556769/> ns1:lat "32" ;
+        ns1:long "-2" .
+
+    <https://sws.geonames.org/2556996/> ns1:lat "28.60986" ;
+        ns1:long "-9.42986" .
+
+    <https://sws.geonames.org/2557019/> ns1:lat "31.24653" ;
+        ns1:long "-7.9789" .
+
+    <https://sws.geonames.org/2557676/> ns1:lat "30" ;
+        ns1:long "-8.5" .
+
+    <https://sws.geonames.org/2558052/> ns1:lat "31.21673" ;
+        ns1:long "-8.23184" .
+
+    <https://sws.geonames.org/2558470/> ns1:lat "33.82404" ;
+        ns1:long "-6.06627" .
+
+    <https://sws.geonames.org/2558667/> ns1:lat "29.38914" ;
+        ns1:long "-8.2549" .
+
+    <https://sws.geonames.org/2559778/> ns1:lat "31.11393" ;
+        ns1:long "-7.28369" .
+
+    <https://sws.geonames.org/2560392/> ns1:lat "33.74531" ;
+        ns1:long "-4.73091" .
+
+    <https://sws.geonames.org/2560399/> ns1:lat "30.26434" ;
+        ns1:long "-8.75592" .
+
+    <https://sws.geonames.org/2560784/> ns1:lat "33.6" ;
+        ns1:long "-7.54" .
+
+    <https://sws.geonames.org/2561668/> ns1:lat "30.42018" ;
+        ns1:long "-9.59815" .
+
+    <https://sws.geonames.org/2561816/> ns1:lat "31.06076" ;
+        ns1:long "-7.26125" .
+
+    <https://sws.geonames.org/2565267/> ns1:lat "29.82" ;
+        ns1:long "-5.72" .
+
+    <https://sws.geonames.org/2570656/> ns1:lat "30.64449" ;
+        ns1:long "-4.41279" .
+
+    <https://sws.geonames.org/2572183/> ns1:lat "-4.2657" ;
+        ns1:long "15.28048" .
+
+    <https://sws.geonames.org/2588491/> ns1:lat "6.55" ;
+        ns1:long "-10.31667" .
+
+    <https://sws.geonames.org/2588492/> ns1:lat "5.91667" ;
+        ns1:long "-9.36667" .
+
+    <https://sws.geonames.org/2589581/> ns1:lat "28" ;
+        ns1:long "3" .
+
+    <https://sws.geonames.org/2593436/> ns1:lat "-4.91465" ;
+        ns1:long "15.44415" .
+
+    <https://sws.geonames.org/2595164/> ns1:lat "4.6604" ;
+        ns1:long "9.5122" .
+
+    <https://sws.geonames.org/2597333/> ns1:lat "6.41667" ;
+        ns1:long "-7.5" .
+
+    <https://sws.geonames.org/2597549/> ns1:lat "32.5" ;
+        ns1:long "-8.75" .
+
+    <https://sws.geonames.org/2597550/> ns1:lat "34.5" ;
+        ns1:long "-6" .
+
+    <https://sws.geonames.org/2597554/> ns1:lat "30.66667" ;
+        ns1:long "-7.5" .
+
+    <https://sws.geonames.org/2597555/> ns1:lat "32.16667" ;
+        ns1:long "-6.41667" .
+
+    <https://sws.geonames.org/2597556/> ns1:lat "35.25" ;
+        ns1:long "-5.43333" .
+
+    <https://sws.geonames.org/2597557/> ns1:lat "34.5" ;
+        ns1:long "-4.16667" .
+
+    <https://sws.geonames.org/325593/> ns1:lat "8.55" ;
+        ns1:long "38.86667" .
+
+    <https://sws.geonames.org/326308/> ns1:lat "8.45" ;
+        ns1:long "39.28333" .
+
+    <https://sws.geonames.org/326321/> ns1:lat "6.6" ;
+        ns1:long "38.41667" .
+
+    <https://sws.geonames.org/326350/> ns1:lat "11.5" ;
+        ns1:long "40" .
+
+    <https://sws.geonames.org/328434/> ns1:lat "7.85" ;
+        ns1:long "36.08333" .
+
+    <https://sws.geonames.org/328577/> ns1:lat "9" ;
+        ns1:long "39" .
+
+    <https://sws.geonames.org/330186/> ns1:lat "8.55" ;
+        ns1:long "39.26667" .
+
+    <https://sws.geonames.org/331180/> ns1:lat "13.49667" ;
+        ns1:long "39.47528" .
+
+    <https://sws.geonames.org/331259/> ns1:lat "4.05" ;
+        ns1:long "38.3" .
+
+    <https://sws.geonames.org/332288/> ns1:lat "12.03219" ;
+        ns1:long "39.04756" .
+
+    <https://sws.geonames.org/332817/> ns1:lat "5.25" ;
+        ns1:long "37.48333" .
+
+    <https://sws.geonames.org/333206/> ns1:lat "9.8" ;
+        ns1:long "38.46667" .
+
+    <https://sws.geonames.org/333465/> ns1:lat "7.17966" ;
+        ns1:long "36.0479" .
+
+    <https://sws.geonames.org/333772/> ns1:lat "7.67344" ;
+        ns1:long "36.83441" .
+
+    <https://sws.geonames.org/333795/> ns1:lat "9.35" ;
+        ns1:long "42.8" .
+
+    <https://sws.geonames.org/3345492/> ns1:lat "-16.7444" ;
+        ns1:long "14.97494" .
+
+    <https://sws.geonames.org/3346015/> ns1:lat "-11.20605" ;
+        ns1:long "13.84371" .
+
+    <https://sws.geonames.org/3346497/> ns1:lat "-14.81909" ;
+        ns1:long "14.53504" .
+
+    <https://sws.geonames.org/3346557/> ns1:lat "-14.07526" ;
+        ns1:long "14.07642" .
+
+    <https://sws.geonames.org/3347016/> ns1:lat "-15.33207" ;
+        ns1:long "12.66002" .
+
+    <https://sws.geonames.org/3347019/> ns1:lat "-15.19611" ;
+        ns1:long "12.15222" .
+
+    <https://sws.geonames.org/3347092/> ns1:lat "-16.17886" ;
+        ns1:long "15.76135" .
+
+    <https://sws.geonames.org/3347762/> ns1:lat "-14.91717" ;
+        ns1:long "13.4925" .
+
+    <https://sws.geonames.org/3348147/> ns1:lat "-15.23569" ;
+        ns1:long "13.51123" .
+
+    <https://sws.geonames.org/3348287/> ns1:lat "-15.02479" ;
+        ns1:long "13.375" .
+
+    <https://sws.geonames.org/3348297/> ns1:lat "-16.6864" ;
+        ns1:long "14.90317" .
+
+    <https://sws.geonames.org/3348303/> ns1:lat "-14.69531" ;
+        ns1:long "15.00014" .
+
+    <https://sws.geonames.org/3348605/> ns1:lat "-13.79443" ;
+        ns1:long "16.10631" .
+
+    <https://sws.geonames.org/3349096/> ns1:lat "-16.51009" ;
+        ns1:long "15.43526" .
+
+    <https://sws.geonames.org/3349234/> ns1:lat "-10.82696" ;
+        ns1:long "15.03197" .
+
+    <https://sws.geonames.org/3349253/> ns1:lat "-17.08305" ;
+        ns1:long "15.12694" .
+
+    <https://sws.geonames.org/3349723/> ns1:lat "-12.55708" ;
+        ns1:long "16.33805" .
+
+    <https://sws.geonames.org/3350028/> ns1:lat "-15.89354" ;
+        ns1:long "13.45564" .
+
+    <https://sws.geonames.org/3350246/> ns1:lat "-12.43002" ;
+        ns1:long "13.54677" .
+
+    <https://sws.geonames.org/335035/> ns1:lat "9.31387" ;
+        ns1:long "42.11815" .
+
+    <https://sws.geonames.org/3350602/> ns1:lat "-14.88495" ;
+        ns1:long "15.08229" .
+
+    <https://sws.geonames.org/335160/> ns1:lat "5.15" ;
+        ns1:long "36.75" .
+
+    <https://sws.geonames.org/3351640/> ns1:lat "-12.34989" ;
+        ns1:long "17.3031" .
+
+    <https://sws.geonames.org/3351660/> ns1:lat "-12.85399" ;
+        ns1:long "13.92825" .
+
+    <https://sws.geonames.org/3351661/> ns1:lat "-12.73963" ;
+        ns1:long "13.57784" .
+
+    <https://sws.geonames.org/3351879/> ns1:lat "-12.5" ;
+        ns1:long "18.5" .
+
+    <https://sws.geonames.org/335286/> ns1:lat "6.48333" ;
+        ns1:long "38.51667" .
+
+    <https://sws.geonames.org/335503/> ns1:lat "9.66667" ;
+        ns1:long "38.78333" .
+
+    <https://sws.geonames.org/336014/> ns1:lat "12.6" ;
+        ns1:long "37.46667" .
+
+    <https://sws.geonames.org/336164/> ns1:lat "11" ;
+        ns1:long "37" .
+
+    <https://sws.geonames.org/336931/> ns1:lat "9.06667" ;
+        ns1:long "38.5" .
+
+    <https://sws.geonames.org/3370751/> ns1:lat "-15.95" ;
+        ns1:long "-5.7" .
+
+    <https://sws.geonames.org/3370948/> ns1:lat "-40.30571" ;
+        ns1:long "-9.99687" .
+
+    <https://sws.geonames.org/337996/> ns1:lat "9" ;
+        ns1:long "39.5" .
+
+    <https://sws.geonames.org/338010/> ns1:lat "15" ;
+        ns1:long "39" .
+
+    <https://sws.geonames.org/338488/> ns1:lat "8.8" ;
+        ns1:long "38.9" .
+
+    <https://sws.geonames.org/339219/> ns1:lat "11.13333" ;
+        ns1:long "39.63333" .
+
+    <https://sws.geonames.org/341742/> ns1:lat "7.28889" ;
+        ns1:long "36.24167" .
+
+    <https://sws.geonames.org/342884/> ns1:lat "11.59364" ;
+        ns1:long "37.39077" .
+
+    <https://sws.geonames.org/343137/> ns1:lat "7.06205" ;
+        ns1:long "38.47635" .
+
+    <https://sws.geonames.org/343300/> ns1:lat "15.33805" ;
+        ns1:long "38.93184" .
+
+    <https://sws.geonames.org/343370/> ns1:lat "7.95" ;
+        ns1:long "39.13333" .
+
+    <https://sws.geonames.org/343450/> ns1:lat "7.5" ;
+        ns1:long "39.5" .
+
+    <https://sws.geonames.org/344094/> ns1:lat "11.43333" ;
+        ns1:long "39.28333" .
+
+    <https://sws.geonames.org/344420/> ns1:lat "14.12109" ;
+        ns1:long "38.72337" .
+
+    <https://sws.geonames.org/344851/> ns1:lat "3.43333" ;
+        ns1:long "39.51667" .
+
+    <https://sws.geonames.org/344979/> ns1:lat "9.02497" ;
+        ns1:long "38.74689" .
+
+    <https://sws.geonames.org/345844/> ns1:lat "6.33333" ;
+        ns1:long "37.83333" .
+
+    <https://sws.geonames.org/347281/> ns1:lat "30.57857" ;
+        ns1:long "32.28684" .
+
+    <https://sws.geonames.org/347296/> ns1:lat "26.90843" ;
+        ns1:long "31.43469" .
+
+    <https://sws.geonames.org/347342/> ns1:lat "25.7" ;
+        ns1:long "32.68333" .
+
+    <https://sws.geonames.org/347468/> ns1:lat "28.4175" ;
+        ns1:long "30.83027" .
+
+    <https://sws.geonames.org/347497/> ns1:lat "30.78847" ;
+        ns1:long "31.00192" .
+
+    <https://sws.geonames.org/347591/> ns1:lat "31.0539" ;
+        ns1:long "31.37787" .
+
+    <https://sws.geonames.org/347712/> ns1:lat "29.93139" ;
+        ns1:long "32.56278" .
+
+    <https://sws.geonames.org/347794/> ns1:lat "26.5" ;
+        ns1:long "31.7" .
+
+    <https://sws.geonames.org/347863/> ns1:lat "29.2032" ;
+        ns1:long "25.51965" .
+
+    <https://sws.geonames.org/347930/> ns1:lat "29.5" ;
+        ns1:long "34" .
+
+    <https://sws.geonames.org/347940/> ns1:lat "24.63833" ;
+        ns1:long "32.93737" .
+
+    <https://sws.geonames.org/349401/> ns1:lat "30.5" ;
+        ns1:long "33.7" .
+
+    <https://sws.geonames.org/349608/> ns1:lat "29.85" ;
+        ns1:long "31.21667" .
+
+    <https://sws.geonames.org/350155/> ns1:lat "20.26735" ;
+        ns1:long "38.53455" .
+
+    <https://sws.geonames.org/350295/> ns1:lat "25.72798" ;
+        ns1:long "32.61039" .
+
+    <https://sws.geonames.org/350546/> ns1:lat "25.8" ;
+        ns1:long "32.75" .
+
+    <https://sws.geonames.org/351036/> ns1:lat "30.16196" ;
+        ns1:long "31.14946" .
+
+    <https://sws.geonames.org/351277/> ns1:lat "30.43785" ;
+        ns1:long "30.19499" .
+
+    <https://sws.geonames.org/351820/> ns1:lat "28.53914" ;
+        ns1:long "33.97496" .
+
+    <https://sws.geonames.org/351834/> ns1:lat "30.33275" ;
+        ns1:long "32.37461" .
+
+    <https://sws.geonames.org/351884/> ns1:lat "30.0217" ;
+        ns1:long "31.30326" .
+
+    <https://sws.geonames.org/352261/> ns1:lat "30.00737" ;
+        ns1:long "31.23927" .
+
+    <https://sws.geonames.org/352547/> ns1:lat "29.86667" ;
+        ns1:long "31.25" .
+
+    <https://sws.geonames.org/352603/> ns1:lat "29.7" ;
+        ns1:long "27.5" .
+
+    <https://sws.geonames.org/355182/> ns1:lat "29" ;
+        ns1:long "33.8" .
+
+    <https://sws.geonames.org/355449/> ns1:lat "25.29336" ;
+        ns1:long "32.55402" .
+
+    <https://sws.geonames.org/355595/> ns1:lat "29.0895" ;
+        ns1:long "30.94319" .
+
+    <https://sws.geonames.org/355635/> ns1:lat "24.97916" ;
+        ns1:long "32.87722" .
+
+    <https://sws.geonames.org/355992/> ns1:lat "29.27411" ;
+        ns1:long "30.89889" .
+
+    <https://sws.geonames.org/356859/> ns1:lat "24.01377" ;
+        ns1:long "32.87749" .
+
+    <https://sws.geonames.org/3578594/> ns1:lat "16.23218" ;
+        ns1:long "-61.78917" .
+
+    <https://sws.geonames.org/357994/> ns1:lat "27" ;
+        ns1:long "30" .
+
+    <https://sws.geonames.org/358422/> ns1:lat "26.16874" ;
+        ns1:long "32.65719" .
+
+    <https://sws.geonames.org/358471/> ns1:lat "25.5" ;
+        ns1:long "29.16667" .
+
+    <https://sws.geonames.org/358483/> ns1:lat "29.75" ;
+        ns1:long "31.23333" .
+
+    <https://sws.geonames.org/358616/> ns1:lat "29.94167" ;
+        ns1:long "32.56583" .
+
+    <https://sws.geonames.org/358617/> ns1:lat "31.12339" ;
+        ns1:long "32.41926" .
+
+    <https://sws.geonames.org/358619/> ns1:lat "31.26531" ;
+        ns1:long "32.3019" .
+
+    <https://sws.geonames.org/358683/> ns1:lat "30.06041" ;
+        ns1:long "31.23147" .
+
+    <https://sws.geonames.org/359171/> ns1:lat "28.9" ;
+        ns1:long "30.6" .
+
+    <https://sws.geonames.org/359245/> ns1:lat "30.90038" ;
+        ns1:long "31.68275" .
+
+    <https://sws.geonames.org/359280/> ns1:lat "30.45977" ;
+        ns1:long "31.1842" .
+
+    <https://sws.geonames.org/359765/> ns1:lat "29.89645" ;
+        ns1:long "32.45784" .
+
+    <https://sws.geonames.org/359781/> ns1:lat "27.2" ;
+        ns1:long "31.1" .
+
+    <https://sws.geonames.org/359783/> ns1:lat "27.18096" ;
+        ns1:long "31.18368" .
+
+    <https://sws.geonames.org/359787/> ns1:lat "23.3" ;
+        ns1:long "32.9" .
+
+    <https://sws.geonames.org/359790/> ns1:lat "24.08995" ;
+        ns1:long "32.88938" .
+
+    <https://sws.geonames.org/359792/> ns1:lat "24.09082" ;
+        ns1:long "32.89942" .
+
+    <https://sws.geonames.org/359796/> ns1:lat "29.97371" ;
+        ns1:long "32.52627" .
+
+    <https://sws.geonames.org/359797/> ns1:lat "29.7" ;
+        ns1:long "32.3" .
+
+    <https://sws.geonames.org/360170/> ns1:lat "25.61988" ;
+        ns1:long "32.54305" .
+
+    <https://sws.geonames.org/360483/> ns1:lat "24.8" ;
+        ns1:long "28.9" .
+
+    <https://sws.geonames.org/360502/> ns1:lat "25.69893" ;
+        ns1:long "32.6421" .
+
+    <https://sws.geonames.org/360535/> ns1:lat "25.73261" ;
+        ns1:long "32.61042" .
+
+    <https://sws.geonames.org/360610/> ns1:lat "30.85711" ;
+        ns1:long "32.31183" .
+
+    <https://sws.geonames.org/360621/> ns1:lat "30.3" ;
+        ns1:long "31.25" .
+
+    <https://sws.geonames.org/360630/> ns1:lat "30.06263" ;
+        ns1:long "31.24967" .
+
+    <https://sws.geonames.org/360631/> ns1:lat "30.05" ;
+        ns1:long "31.65" .
+
+    <https://sws.geonames.org/360688/> ns1:lat "28.1" ;
+        ns1:long "30" .
+
+    <https://sws.geonames.org/360689/> ns1:lat "30.5" ;
+        ns1:long "31" .
+
+    <https://sws.geonames.org/360986/> ns1:lat "25.11952" ;
+        ns1:long "32.79812" .
+
+    <https://sws.geonames.org/360995/> ns1:lat "30.00944" ;
+        ns1:long "31.20861" .
+
+    <https://sws.geonames.org/360997/> ns1:lat "29.99776" ;
+        ns1:long "31.05286" .
+
+    <https://sws.geonames.org/361055/> ns1:lat "30.60427" ;
+        ns1:long "32.27225" .
+
+    <https://sws.geonames.org/361056/> ns1:lat "30.6" ;
+        ns1:long "32.4" .
+
+    <https://sws.geonames.org/361058/> ns1:lat "31.20176" ;
+        ns1:long "29.91582" .
+
+    <https://sws.geonames.org/361059/> ns1:lat "31" ;
+        ns1:long "29.75" .
+
+    <https://sws.geonames.org/361294/> ns1:lat "30.9" ;
+        ns1:long "31" .
+
+    <https://sws.geonames.org/361316/> ns1:lat "30.68333" ;
+        ns1:long "32.33333" .
+
+    <https://sws.geonames.org/361320/> ns1:lat "29.30995" ;
+        ns1:long "30.8418" .
+
+    <https://sws.geonames.org/361323/> ns1:lat "29.3" ;
+        ns1:long "30.5" .
+
+    <https://sws.geonames.org/361370/> ns1:lat "30.6" ;
+        ns1:long "30.2" .
+
+    <https://sws.geonames.org/361468/> ns1:lat "27.18624" ;
+        ns1:long "33.78845" .
+
+    <https://sws.geonames.org/361538/> ns1:lat "27.77585" ;
+        ns1:long "30.80353" .
+
+    <https://sws.geonames.org/361849/> ns1:lat "31.1" ;
+        ns1:long "31.6" .
+
+    <https://sws.geonames.org/365137/> ns1:lat "15.64453" ;
+        ns1:long "32.47773" .
+
+    <https://sws.geonames.org/367544/> ns1:lat "19.1059" ;
+        ns1:long "37.3321" .
+
+    <https://sws.geonames.org/369103/> ns1:lat "20.5" ;
+        ns1:long "33" .
+
+    <https://sws.geonames.org/369108/> ns1:lat "12" ;
+        ns1:long "30.75" .
+
+    <https://sws.geonames.org/370430/> ns1:lat "13.75" ;
+        ns1:long "24.5" .
+
+    <https://sws.geonames.org/371760/> ns1:lat "13.1629" ;
+        ns1:long "32.66347" .
+
+    <https://sws.geonames.org/372751/> ns1:lat "15" ;
+        ns1:long "35.5" .
+
+    <https://sws.geonames.org/373303/> ns1:lat "4.85165" ;
+        ns1:long "31.58247" .
+
+    <https://sws.geonames.org/377890/> ns1:lat "8" ;
+        ns1:long "28" .
+
+    <https://sws.geonames.org/379252/> ns1:lat "15.55177" ;
+        ns1:long "32.53241" .
+
+    <https://sws.geonames.org/379253/> ns1:lat "15.8" ;
+        ns1:long "33" .
+
+    <https://sws.geonames.org/379303/> ns1:lat "13.45262" ;
+        ns1:long "22.44725" .
+
+    <https://sws.geonames.org/380174/> ns1:lat "11.7891" ;
+        ns1:long "34.3592" .
+
+    <https://sws.geonames.org/382987/> ns1:lat "-2.32812" ;
+        ns1:long "30.61917" .
+
+    <https://sws.geonames.org/400741/> ns1:lat "0" ;
+        ns1:long "38" .
+
+    <https://sws.geonames.org/400742/> ns1:lat "-0.75" ;
+        ns1:long "37" .
+
+    <https://sws.geonames.org/400743/> ns1:lat "0.5" ;
+        ns1:long "34.58333" .
+
+    <https://sws.geonames.org/400744/> ns1:lat "0.5" ;
+        ns1:long "36" .
+
+    <https://sws.geonames.org/401756/> ns1:lat "4.63333" ;
+        ns1:long "36.83333" .
+
+    <https://sws.geonames.org/408646/> ns1:lat "19.96667" ;
+        ns1:long "35.66667" .
+
+    <https://sws.geonames.org/408648/> ns1:lat "14.6" ;
+        ns1:long "33.35" .
+
+    <https://sws.geonames.org/408653/> ns1:lat "13.5" ;
+        ns1:long "32.4" .
+
+    <https://sws.geonames.org/408654/> ns1:lat "11.15" ;
+        ns1:long "34.1" .
+
+    <https://sws.geonames.org/408655/> ns1:lat "4.75" ;
+        ns1:long "31" .
+
+    <https://sws.geonames.org/408658/> ns1:lat "13.41667" ;
+        ns1:long "22.66667" .
+
+    <https://sws.geonames.org/408660/> ns1:lat "11.5" ;
+        ns1:long "24.66667" .
+
+    <https://sws.geonames.org/408666/> ns1:lat "16" ;
+        ns1:long "25.5" .
+
+    <https://sws.geonames.org/425378/> ns1:lat "-3.38193" ;
+        ns1:long "29.36142" .
+
+    <https://sws.geonames.org/425551/> ns1:lat "-3.2682" ;
+        ns1:long "29.6079" .
+
+    <https://sws.geonames.org/433561/> ns1:lat "-3.5" ;
+        ns1:long "30" .
+
+    <https://sws.geonames.org/443777/> ns1:lat "-3.2684" ;
+        ns1:long "29.2409" .
+
+    <https://sws.geonames.org/444179/> ns1:lat "12" ;
+        ns1:long "41.5" .
+
+    <https://sws.geonames.org/444180/> ns1:lat "11.5" ;
+        ns1:long "38.5" .
+
+    <https://sws.geonames.org/444184/> ns1:lat "9.25" ;
+        ns1:long "42.16667" .
+
+    <https://sws.geonames.org/444185/> ns1:lat "8" ;
+        ns1:long "39" .
+
+    <https://sws.geonames.org/444186/> ns1:lat "7" ;
+        ns1:long "44" .
+
+    <https://sws.geonames.org/444187/> ns1:lat "14.16667" ;
+        ns1:long "38.83333" .
+
+    <https://sws.geonames.org/444188/> ns1:lat "6.05862" ;
+        ns1:long "36.7273" .
+
+    <https://sws.geonames.org/49518/> ns1:lat "-2" ;
+        ns1:long "30" .
+
+    <https://sws.geonames.org/51537/> ns1:lat "6" ;
+        ns1:long "48" .
+
+    <https://sws.geonames.org/52187/> ns1:lat "10.5" ;
+        ns1:long "48" .
+
+    <https://sws.geonames.org/55223/> ns1:lat "11.1595" ;
+        ns1:long "48.1967" .
+
+    <https://sws.geonames.org/6255146/> ns1:lat "7.1881" ;
+        ns1:long "21.09375" .
+
+    <https://sws.geonames.org/6360638/> ns1:lat "28.53924" ;
+        ns1:long "-16.20302" .
+
+    <https://sws.geonames.org/6360639/> ns1:lat "28.4153" ;
+        ns1:long "-16.4817" .
+
+    <https://sws.geonames.org/64013/> ns1:lat "11.28421" ;
+        ns1:long "49.18158" .
+
+    <https://sws.geonames.org/64661/> ns1:lat "10" ;
+        ns1:long "50" .
+
+    <https://sws.geonames.org/6545796/> ns1:lat "30.58042" ;
+        ns1:long "-9.67735" .
+
+    <https://sws.geonames.org/6545879/> ns1:lat "29.96069" ;
+        ns1:long "-9.65881" .
+
+    <https://sws.geonames.org/6546275/> ns1:lat "32.08011" ;
+        ns1:long "-1.23902" .
+
+    <https://sws.geonames.org/6546556/> ns1:lat "31.36255" ;
+        ns1:long "-5.93922" .
+
+    <https://sws.geonames.org/6930057/> ns1:lat "-15.93183" ;
+        ns1:long "-5.71817" .
+
+    <https://sws.geonames.org/6930641/> ns1:lat "27.19678" ;
+        ns1:long "2.47913" .
+
+    <https://sws.geonames.org/7108016/> ns1:lat "5.88973" ;
+        ns1:long "10.15597" .
+
+    <https://sws.geonames.org/7280295/> ns1:lat "-4.79029" ;
+        ns1:long "11.87622" .
+
+    <https://sws.geonames.org/7280528/> ns1:lat "31.9314" ;
+        ns1:long "-4.42663" .
+
+    <https://sws.geonames.org/7491702/> ns1:lat "35.22019" ;
+        ns1:long "1.17913" .
+
+    <https://sws.geonames.org/7603253/> ns1:lat "9.33" ;
+        ns1:long "14.75" .
+
+    <https://sws.geonames.org/7603258/> ns1:lat "20.33333" ;
+        ns1:long "16.66667" .
+
+    <https://sws.geonames.org/7603259/> ns1:lat "25.7" ;
+        ns1:long "32.65" .
+
+    <https://sws.geonames.org/7670903/> ns1:lat "-21.46453" ;
+        ns1:long "47.08991" .
+
+    <https://sws.geonames.org/7729885/> ns1:lat "18.31281" ;
+        ns1:long "-4.83398" .
+
+    <https://sws.geonames.org/7729886/> ns1:lat "-2.02107" ;
+        ns1:long "24.69727" .
+
+    <https://sws.geonames.org/7729887/> ns1:lat "32.95337" ;
+        ns1:long "9.97559" .
+
+    <https://sws.geonames.org/7729889/> ns1:lat "-0.52734" ;
+        ns1:long "36.51855" .
+
+    <https://sws.geonames.org/7731935/> ns1:lat "0.52239" ;
+        ns1:long "25.24349" .
+
+    <https://sws.geonames.org/7731971/> ns1:lat "-5.19705" ;
+        ns1:long "14.35037" .
+
+    <https://sws.geonames.org/7731984/> ns1:lat "-5.8016" ;
+        ns1:long "13.06896" .
+
+    <https://sws.geonames.org/7732003/> ns1:lat "-4.7883" ;
+        ns1:long "14.65435" .
+
+    <https://sws.geonames.org/7900455/> ns1:lat "-11.72732" ;
+        ns1:long "13.8165" .
+
+    <https://sws.geonames.org/7909807/> ns1:lat "7.5" ;
+        ns1:long "30" .
+
+    <https://sws.geonames.org/8069440/> ns1:lat "3.20905" ;
+        ns1:long "27.13906" .
+
+    <https://sws.geonames.org/8145104/> ns1:lat "2.08418" ;
+        ns1:long "25.84829" .
+
+    <https://sws.geonames.org/8147156/> ns1:lat "2.2908" ;
+        ns1:long "23.03544" .
+
+    <https://sws.geonames.org/8252716/> ns1:lat "-5.86558" ;
+        ns1:long "13.09299" .
+
+    <https://sws.geonames.org/8283813/> ns1:lat "-6.05114" ;
+        ns1:long "22.47692" .
+
+    <https://sws.geonames.org/8327220/> ns1:lat "-6.10762" ;
+        ns1:long "21.3089" .
+
+    <https://sws.geonames.org/8327431/> ns1:lat "-6.68972" ;
+        ns1:long "21.11541" .
+
+    <https://sws.geonames.org/8329392/> ns1:lat "0.01056" ;
+        ns1:long "29.36755" .
+
+    <https://sws.geonames.org/8354635/> ns1:lat "32.63806" ;
+        ns1:long "14.29298" .
+
+    <https://sws.geonames.org/8604857/> ns1:lat "18.4" ;
+        ns1:long "21.4" .
+
+    <https://sws.geonames.org/8607484/> ns1:lat "5.43217" ;
+        ns1:long "10.31786" .
+
+    <https://sws.geonames.org/8674194/> ns1:lat "9.57092" ;
+        ns1:long "13.42576" .
+
+    <https://sws.geonames.org/8693107/> ns1:lat "13" ;
+        ns1:long "25" .
+
+    <https://sws.geonames.org/8714533/> ns1:lat "-5.22571" ;
+        ns1:long "12.14474" .
+
+    <https://sws.geonames.org/876296/> ns1:lat "-15.46667" ;
+        ns1:long "21.36667" .
+
+    <https://sws.geonames.org/876337/> ns1:lat "-15.94761" ;
+        ns1:long "19.3832" .
+
+    <https://sws.geonames.org/876925/> ns1:lat "-18.88333" ;
+        ns1:long "22.4" .
+
+    <https://sws.geonames.org/878281/> ns1:lat "-9.99709" ;
+        ns1:long "39.71649" .
+
+    <https://sws.geonames.org/88252/> ns1:lat "31" ;
+        ns1:long "22.5" .
+
+    <https://sws.geonames.org/88319/> ns1:lat "32.11486" ;
+        ns1:long "20.06859" .
+
+    <https://sws.geonames.org/88533/> ns1:lat "29.10806" ;
+        ns1:long "21.28694" .
+
+    <https://sws.geonames.org/88903/> ns1:lat "32.49257" ;
+        ns1:long "20.82909" .
+
+    <https://sws.geonames.org/89113/> ns1:lat "30.75545" ;
+        ns1:long "20.22625" .
+
+    <https://sws.geonames.org/9073432/> ns1:lat "25.71937" ;
+        ns1:long "32.60123" .
+
+    <https://sws.geonames.org/9143469/> ns1:lat "7.23774" ;
+        ns1:long "19.21819" .
+
+    <https://sws.geonames.org/9166121/> ns1:lat "-4.28194" ;
+        ns1:long "15.48861" .
+
+    <https://sws.geonames.org/9179189/> ns1:lat "-5.38335" ;
+        ns1:long "27" .
+
+    <https://sws.geonames.org/921929/> ns1:lat "-12.23333" ;
+        ns1:long "44.44553" .
+
+    <https://sws.geonames.org/922000/> ns1:lat "-12.21999" ;
+        ns1:long "44.4421" .
+
+    <https://sws.geonames.org/922727/> ns1:lat "-10.71667" ;
+        ns1:long "25.46667" .
+
+    <https://sws.geonames.org/922771/> ns1:lat "-10.71667" ;
+        ns1:long "25.46667" .
+
+    <https://sws.geonames.org/922822/> ns1:lat "-11.48375" ;
+        ns1:long "28.33931" .
+
+    <https://sws.geonames.org/934154/> ns1:lat "-20.16194" ;
+        ns1:long "57.49889" .
+
+    <https://sws.geonames.org/935210/> ns1:lat "-21.0271" ;
+        ns1:long "55.5395" .
+
+    <https://sws.geonames.org/935221/> ns1:lat "-21.00961" ;
+        ns1:long "55.27134" .
+
+    <https://sws.geonames.org/935264/> ns1:lat "-20.88231" ;
+        ns1:long "55.4504" .
+
+    <https://sws.geonames.org/935267/> ns1:lat "-21.03795" ;
+        ns1:long "55.71546" .
+
+    <https://sws.geonames.org/935452/> ns1:lat "-21.09875" ;
+        ns1:long "55.48027" .
+
+    <https://sws.geonames.org/9855409/> ns1:lat "35.48483" ;
+        ns1:long "6.46872" .
+}
+
