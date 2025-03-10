@@ -30,7 +30,7 @@ def fetch_sparql_results(offset):
     SELECT ?object ?image ?title ?identifier ?inventoryNumber ?type ?material ?intendedUse__id ?intendedUse__label  ?maker ?productionPlace ?productionTimeSpan ?startDate ?endDate
            ?provenanceType ?provenanceTimeSpan ?provenanceStart ?provenanceEnd ?provenanceFrom ?provenanceTo ?historicalEvent {{
         # temporary constraints
-        ?object crm:P141i_was_assigned_by/crm:P141_assigned <https://hdl.handle.net/20.500.11840/event423> .
+        # ?object crm:P141i_was_assigned_by/crm:P141_assigned <https://hdl.handle.net/20.500.11840/event423> .
         {{
             GRAPH <{OLD_GRAPH_URI}> {{
                 ?object a crm:E22_Human-Made_Object .

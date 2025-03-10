@@ -27,7 +27,7 @@ def fetch_sparql_results(offset):
     
     SELECT ?event ?object ?eventLabel ?provType ?eventType ?timeSpan ?startDate ?endDate ?fromActor ?toActor {{
         # temporary constraints
-        ?object crm:P141i_was_assigned_by/crm:P141_assigned <https://hdl.handle.net/20.500.11840/event423> .
+        # ?object crm:P141i_was_assigned_by/crm:P141_assigned <https://hdl.handle.net/20.500.11840/event423> .
         ?object crm:P24i_changed_ownership_through | crm:P30i_custody_transferred_through ?event .
         ?event rdf:type ?provType .
         {{?event rdfs:label ?eventLabel .}}
