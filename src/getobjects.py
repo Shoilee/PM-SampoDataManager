@@ -215,6 +215,7 @@ def store_triples_in_graph(results, ds):
     for row in results:
         obj = URIRef(row["object"]["value"])
         graph.add((obj, RDF["type"], CRM["E22_Human-Made_Object"])) 
+        graph.add((obj, PM["source"], URIRef("https://wereldmuseum.nl/")))
         if "image" in row:
             graph.add((obj, PM["shown_by"], Literal(row["image"]["value"])))
         if "title" in row:
