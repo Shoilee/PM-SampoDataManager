@@ -3,10 +3,10 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 import time
 
 # SPARQL Endpoint
-ENDPOINT_URL = "https://api.colonialcollections.nl/datasets/nmvw/collection-archives/sparql"
+ENDPOINT_URL = "https://api.colonialcollections.nl/datasets/sarah/pm-sampo/sparql"
 NEW_GRAPH_URI = "https://pressingmatter.nl/nmvw/graph/actors"
 OUTPUT_FILE = "data/actors.trig"
-BATCH_SIZE = 100  # Number of results per query
+BATCH_SIZE = 1000  # Number of results per query
 
 # Define Namespaces
 CRM = Namespace("http://www.cidoc-crm.org/cidoc-crm/")
