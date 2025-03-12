@@ -30,7 +30,7 @@ def get_target_instance(offset):
     
     SELECT ?object {{
         # temporary constraints
-        ?object crm:P141i_was_assigned_by/crm:P141_assigned <https://hdl.handle.net/20.500.11840/event423> .
+        # ?object crm:P141i_was_assigned_by/crm:P141_assigned <https://hdl.handle.net/20.500.11840/event423> .
         {{
             GRAPH <{OLD_GRAPH_URI}> {{
                 ?object a crm:E22_Human-Made_Object .
