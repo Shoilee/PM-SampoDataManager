@@ -1,5 +1,6 @@
 from rdflib import Graph, Namespace, URIRef, Literal, Dataset, XSD
 from SPARQLWrapper import SPARQLWrapper, JSON
+from tqdm import tqdm
 import time
 
 # SPARQL Endpoint
@@ -18,8 +19,8 @@ PM = Namespace("https://pressingmatter.nl/")
 RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 DCT = Namespace("http://purl.org/dc/terms/")
 
-def fetch_sparql_results(offset):
-    """Fetch SPARQL query results from the endpoint with pagination."""
+# Fetch SPARQL query results from the endpoint with pagination.
+def get_target_instance(offset):
     query = f"""
     PREFIX crm: <{CRM}>
     PREFIX skos: <{SKOS}>
@@ -27,62 +28,33 @@ def fetch_sparql_results(offset):
     PREFIX aat: <{AAT}>
     PREFIX dct: <{DCT}>
     
-    SELECT ?object ?image ?title ?identifier ?inventoryNumber ?type ?material ?intendedUse__id ?intendedUse__label  ?maker ?productionPlace ?productionTimeSpan ?startDate ?endDate
-           ?provenanceType ?provenanceTimeSpan ?provenanceStart ?provenanceEnd ?provenanceFrom ?provenanceTo ?historicalEvent {{
+    SELECT ?object {{
         # temporary constraints
-        # ?object crm:P141i_was_assigned_by/crm:P141_assigned <https://hdl.handle.net/20.500.11840/event423> .
+        ?object crm:P141i_was_assigned_by/crm:P141_assigned <https://hdl.handle.net/20.500.11840/event423> .
         {{
             GRAPH <{OLD_GRAPH_URI}> {{
                 ?object a crm:E22_Human-Made_Object .
             }}
         }}
-        UNION {{ 
-            ?object crm:P65_shows_visual_item ?i_BNODE .
-            ?i_BNODE a crm:E36_Visual_Item .
-            ?i_BNODE <https://linked.art/ns/terms/digitally_shown_by> ?image__id.
-            ?image__id <https://linked.art/ns/terms/access_point> ?image .
-        }}
-        UNION {{ ?object dct:title ?title . }}
-        UNION {{ 
-            ?object crm:P1_is_identified_by ?identifier__id .
-            ?identifier__id crm:P2_has_type <http://vocab.getty.edu/aat/300445023> .
-            ?identifier__id crm:P190_has_symbolic_content ?identifier . 
-        }}
-        UNION {{ 
-            ?object crm:P1_is_identified_by ?inventoryNumber__id .
-            ?inventoryNumber__id crm:P2_has_type <http://vocab.getty.edu/aat/300404626> .
-            ?inventoryNumber__id crm:P190_has_symbolic_content ?inventoryNumber . 
-        }}
-        UNION {{ ?object crm:P2_has_type ?type . }}
-        UNION {{ ?object crm:P45_consists_of ?material . }}
-        UNION {{ 
-            ?object crm:P103_was_intended_for ?intendedUse__id . 
-            ?intendedUse__id crm:P190_has_symbolic_content ?intendedUse__label . }}
-        UNION {{ ?object crm:P108i_was_produced_by/crm:P14_carried_out_by ?maker . }}
-        UNION {{ ?object crm:P108i_was_produced_by/crm:P7_took_place_at ?productionPlace . }}
-        UNION {{ 
-            ?object crm:P108i_was_produced_by/crm:P4_has_time-span ?productionTimeSpan . 
-            OPTIONAL {{?productionTimeSpan crm:P82a_begin_of_the_begin ?startDate . }}
-            OPTIONAL {{?productionTimeSpan crm:P82b_end_of_the_end ?endDate . }}
-        }}
-        UNION {{ ?object (crm:P24i_changed_ownership_through | crm:P30i_custody_transferred_through) / crm:P2_has_type ?provenanceType . }}
-        UNION {{ 
-            ?object (crm:P24i_changed_ownership_through | crm:P30i_custody_transferred_through) / crm:P4_has_time-span ?provenanceTimeSpan . 
-            OPTIONAL {{?provenanceTimeSpan crm:P82a_begin_of_the_begin ?provenanceStart . }}
-            OPTIONAL {{?provenanceTimeSpan crm:P82b_end_of_the_end ?provenanceEnd .}}
-        }}
-        UNION {{ ?object (crm:P24i_changed_ownership_through/crm:P23_transferred_title_from | crm:P30i_custody_transferred_through/crm:P28_custody_surrendered_by) ?provenanceFrom . }}
-        UNION {{ ?object (crm:P24i_changed_ownership_through/crm:P22_transferred_title_to | crm:P30i_custody_transferred_through/crm:P29_custody_received_by) ?provenanceTo . }}
-        UNION {{ ?object crm:P141i_was_assigned_by/crm:P141_assigned ?historicalEvent . }}
     }} LIMIT {BATCH_SIZE} OFFSET {offset}
     """
-    
-    # print(query)
-
     sparql = SPARQLWrapper(ENDPOINT_URL)
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
     
+    try:
+        results = sparql.query().convert()
+        return [str(row["object"]["value"]) for row in results["results"]["bindings"]]
+    except Exception as e:
+        print(f"Error querying SPARQL endpoint: {e}")
+        return []
+    
+# Executes a given SPARQL query and returns the results.
+def execute_sparql_query(query):
+    sparql = SPARQLWrapper(ENDPOINT_URL)
+    sparql.setQuery(query)
+    sparql.setReturnFormat(JSON)
+
     try:
         results = sparql.query().convert()
         return results["results"]["bindings"]
@@ -90,9 +62,156 @@ def fetch_sparql_results(offset):
         print(f"Error querying SPARQL endpoint: {e}")
         return []
 
+# Fetch object image from the SPARQL endpoint.
+def query_images(instance):
+    query = f"""
+    PREFIX crm: <{CRM}>
+    SELECT ?object ?image WHERE {{
+        BIND(<{instance}> AS ?object)
+        ?object crm:P65_shows_visual_item ?i_BNODE .
+        ?i_BNODE a crm:E36_Visual_Item .
+        ?i_BNODE <https://linked.art/ns/terms/digitally_shown_by> ?image__id.
+        ?image__id <https://linked.art/ns/terms/access_point> ?image .
+    }}
+    """
+    return execute_sparql_query(query)
+
+# Fetch the title of the object.
+def query_title(instance):
+    query = f"""
+    PREFIX dct: <{DCT}>
+    SELECT ?object ?title WHERE {{
+        BIND(<{instance}> AS ?object)
+        ?object dct:title ?title .
+    }}
+    """
+    return execute_sparql_query(query)
+
+# Fetch the identifier of the object.
+def query_identifier(instance):
+    query = f"""
+    PREFIX crm: <{CRM}>
+    SELECT ?object ?identifier WHERE {{
+        BIND(<{instance}> AS ?object)
+        ?object crm:P1_is_identified_by ?identifier__id .
+        ?identifier__id crm:P2_has_type <http://vocab.getty.edu/aat/300445023> .
+        ?identifier__id crm:P190_has_symbolic_content ?identifier .
+    }}
+    """
+    return execute_sparql_query(query)
+
+# Fetch the inventory number of the object.
+def query_inventory_number(instance_uri):
+    query = f"""
+    PREFIX crm: <{CRM}>
+    SELECT ?object ?inventoryNumber WHERE {{
+        BIND(<{instance_uri}> AS ?object)
+        ?object crm:P1_is_identified_by ?inventoryNumber__id .
+        ?inventoryNumber__id crm:P2_has_type <http://vocab.getty.edu/aat/300404626> .
+        ?inventoryNumber__id crm:P190_has_symbolic_content ?inventoryNumber .
+    }}
+    """
+    return execute_sparql_query(query)
+
+# Fetch the type of the object.
+def query_type(instance):
+    query = f"""
+    PREFIX crm: <{CRM}>
+    SELECT ?object ?type WHERE {{
+        BIND(<{instance}> AS ?object)
+        ?object crm:P2_has_type ?type .
+        
+    }}
+    """
+    return execute_sparql_query(query)
+
+# Fetch the material of the object.
+def query_material(instance):
+
+    query = f"""
+    PREFIX crm: <{CRM}>
+    SELECT ?object ?material WHERE {{
+        BIND(<{instance}> AS ?object)
+        ?object crm:P45_consists_of ?material .
+    }}
+    """
+    return execute_sparql_query(query)
+
+# Fetch the intended use of the object.
+def query_intended_use(instance):
+    query = f"""
+    PREFIX crm: <{CRM}>
+    SELECT ?object ?intendedUse__id ?intendedUse__label WHERE {{
+        BIND(<{instance}> AS ?object)
+        ?object crm:P103_was_intended_for ?intendedUse__id . 
+        ?intendedUse__id crm:P190_has_symbolic_content ?intendedUse__label . 
+    }}
+    """
+    return execute_sparql_query(query)
+
+# Fetch the object's production (maker, place, timespan) of the object.
+def query_production_details(instance):
+    query = f"""
+    PREFIX crm: <{CRM}>
+    SELECT ?object ?maker ?productionPlace ?productionTimeSpan ?startDate ?endDate WHERE {{
+        BIND(<{instance}> AS ?object)
+        ?object crm:P108i_was_produced_by ?production__id .
+        OPTIONAL{{
+            ?production__id crm:P108i_was_produced_by/crm:P14_carried_out_by ?maker .
+        }}
+        OPTIONAL{{
+            ?production__id crm:P108i_was_produced_by/crm:P7_took_place_at ?productionPlace .
+        }}
+        OPTIONAL {{
+            ?production__id crm:P108i_was_produced_by/crm:P4_has_time-span ?productionTimeSpan . 
+            OPTIONAL {{?productionTimeSpan crm:P82a_begin_of_the_begin ?startDate . }}
+            OPTIONAL {{?productionTimeSpan crm:P82b_end_of_the_end ?endDate . }}
+        }}
+    }}
+    """
+    return execute_sparql_query(query)
+
+# Fetch the provenance details (type, time span, actors involved) of the object.
+def query_provenance_details(instance):
+    query = f"""
+    PREFIX crm: <{CRM}>
+    SELECT ?object ?provenanceType ?provenanceTimeSpan ?provenanceStart ?provenanceEnd ?provenanceFrom ?provenanceTo WHERE {{
+        BIND(<{instance}> AS ?object)
+        ?object (crm:P24i_changed_ownership_through | crm:P30i_custody_transferred_through) ?provenance__id .
+        OPTIONAL{{
+            ?provenance__id crm:P2_has_type ?provenanceType .
+        }}
+        OPTIONAL {{
+            ?provenance__id crm:P4_has_time-span ?provenanceTimeSpan .
+            OPTIONAL{{?provenanceTimeSpan crm:P82a_begin_of_the_begin ?provenanceStart .}}
+            OPTIONAL{{?provenanceTimeSpan crm:P82b_end_of_the_end ?provenanceEnd .}}
+        }}
+        OPTIONAL {{
+            ?provenance__id crm:P23_transferred_title_from | crm:P28_custody_surrendered_by ?provenanceFrom .
+        }}
+        OPTIONAL {{
+            ?provenance__id crm:P22_transferred_title_to | crm:P29_custody_received_by ?provenanceTo .
+        }}
+    }}
+    """
+    return execute_sparql_query(query)
+
+# Fetch historical events related to the object.
+def query_historical_events(instance):
+    """Fetch historical events related to the object."""
+    query = f"""
+    PREFIX crm: <{CRM}>
+    SELECT ?object ?historicalEvent WHERE {{
+        BIND(<{instance}> AS ?object)
+        ?object crm:P141i_was_assigned_by/crm:P141_assigned ?historicalEvent .
+    }}
+    """
+    return execute_sparql_query(query)
+
+
 def store_triples_in_graph(results, ds):
     graph = ds.graph(URIRef(f"{NEW_GRAPH_URI}"))
-    
+
     for row in results:
         obj = URIRef(row["object"]["value"])
         graph.add((obj, RDF["type"], CRM["E22_Human-Made_Object"])) 
@@ -150,13 +269,44 @@ def main():
     try:
         while True:
             print(f"Fetching data with OFFSET {offset}...")
-            results = fetch_sparql_results(offset)
-            
-            if not results:
-                print("No more data found. Stopping query.")
+            # results = fetch_sparql_results(offset)
+            uri_list = get_target_instance(offset)
+
+            if len(uri_list) == 0:
+                print("No more instance found. Stopping query.")
                 break
             
-            store_triples_in_graph(results, ds)
+            for uri in tqdm(uri_list):
+                results = query_images(uri)
+                store_triples_in_graph(results, ds)
+
+                results = query_title(uri)
+                store_triples_in_graph(results, ds)
+
+                results = query_identifier(uri)
+                store_triples_in_graph(results, ds)
+
+                results = query_inventory_number(uri)
+                store_triples_in_graph(results, ds)
+
+                results = query_type(uri)
+                store_triples_in_graph(results, ds)
+
+                results = query_material(uri)
+                store_triples_in_graph(results, ds)
+
+                results = query_intended_use(uri)
+                store_triples_in_graph(results, ds)
+
+                results = query_production_details(uri)
+                store_triples_in_graph(results, ds)
+
+                results = query_provenance_details(uri)
+                store_triples_in_graph(results, ds)
+
+                results = query_historical_events(uri)
+                store_triples_in_graph(results, ds)
+
             offset += BATCH_SIZE
     except KeyboardInterrupt:
         print("\nProcess interrupted. Attempting to save extracted data...")
